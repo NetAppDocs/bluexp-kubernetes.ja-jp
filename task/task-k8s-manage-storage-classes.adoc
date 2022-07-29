@@ -25,10 +25,20 @@ NOTE: ストレージクラスが定義されていない場合は、「必須�
 
 .手順
 . キャンバスから、Kubernetes作業環境をCloud Volumes ONTAP またはAmazon FSX for ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。
-. ストレージクラスの名前を指定し、定義オプションを選択して、 * 次へ * をクリックします。
+. ストレージクラスの名前を指定します。
+. 「* Filesystem *」または「* Block * storage」を選択します。
 +
-image:screenshot-k8s-define-storage-class.png["Kubernetes ストレージクラスの定義オプションを示すスクリーンショット"]
+.. *Block* storageの場合は、File System Type（fsstype）を選択します。
++
+image:screenshot-k8s-storage-economy.png["Kubernetesクラスタストレージクラスを設定する際のブロックストレージのfsstypeオプションを示すスクリーンショット"]
 
+.. * Block *または* Filesystem *ストレージの場合、ストレージの経済性を有効にすることができます。
++
+image:screenshot-k8s-storage-fstype.png["ブロックまたはファイルのKubernetesストレージクラスを設定する際のストレージエコノミーオプションを示すスクリーンショット"]
+
+
+
+. ボリュームの拡張、ボリュームの境界、およびデフォルトのストレージクラスのオプションを選択します。「 * 次へ * 」をクリックします。
 . クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。
 +
 image:screenshot-k8s-select-storage-class.png["Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。"]

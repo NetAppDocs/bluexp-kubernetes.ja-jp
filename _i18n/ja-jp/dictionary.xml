@@ -244,9 +244,6 @@
   <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes クラスタがワークスペースから削除され、キャンバスに表示されなくなります。</block>
   <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。</block>
   <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="doc">ストレージクラスを管理する</block>
-  <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">ストレージクラスの名前を指定し、定義オプションを選択して、 * 次へ * をクリックします。</block>
-  <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">Kubernetes ストレージクラスの定義オプションを示すスクリーンショット</block>
-  <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。</block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">をクリックすると、 Kubernetes クラスタのリソースページでストレージクラスを表示できます。</block>
@@ -312,7 +309,6 @@
   <block id="c4541926fe853a3614406482ac212fff" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に</block>
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">バックアップとリストア</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">バックアップとリストアに必要なのは、基本的な許可だけです。</block>
-  <block id="589cddcfb97ddd817654b8448e583560" category="list-text">Cloud Manager を使用してストレージクラスを追加するには、拡張された許可が必要です。</block>
   <block id="e38848cde65bc177038607eba51773c3" category="list-text">Astra Trident をインストールします</block>
   <block id="0cc29c3016f8edd45e66cfd491cc35e4" category="list-text">Cloud Manager が Astra Trident をインストールするための完全な権限を付与する必要があります。</block>
   <block id="6ddcbf7c123160275093489b09f57178" category="admonition">Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。</block>
@@ -487,4 +483,22 @@
   <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用してストレージクラスを管理できるようになります。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">キャンバスから、Kubernetes作業環境をCloud Volumes ONTAP またはAmazon FSX for ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
+  <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">ストレージクラスの名前を指定します。</block>
+  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">「* Filesystem *」または「* Block * storage」を選択します。</block>
+  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">*Block* storageの場合は、File System Type（fsstype）を選択します。</block>
+  <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">Kubernetesクラスタストレージクラスを設定する際のブロックストレージのfsstypeオプションを示すスクリーンショット</block>
+  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">* Block *または* Filesystem *ストレージの場合、ストレージの経済性を有効にすることができます。</block>
+  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">ブロックまたはファイルのKubernetesストレージクラスを設定する際のストレージエコノミーオプションを示すスクリーンショット</block>
+  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab5290e8336f16751587ce4bb04bee9a" category="list-text">ボリュームの拡張、ボリュームの境界、およびデフォルトのストレージクラスのオプションを選択します。「 * 次へ * 」をクリックします。</block>
+  <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud ManagerはKubernetesクラスタを監視して、バックエンドへの変更を確認し、新しいボリュームが追加されると永続ボリュームテーブルを更新します。クラスタで自動バックアップが設定されている場合、新しい永続ボリュームでは自動的にバックアップが有効になります。</block>
+  <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">拡張された許可は、Cloud Managerを使用してストレージクラスを追加し、バックエンドへの変更についてクラスタを監視するために必要です。</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
+  <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">[+]</block>
+  <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">ストレージクラスを定義する</block>
+  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、次の操作を実行できます。</block>
+  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">ブロックストレージのファイルシステムタイプ（fsstype）を指定します</block>
+  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">ブロックストレージとファイルストレージで、経済的なストレージを実現</block>
 </blocks>

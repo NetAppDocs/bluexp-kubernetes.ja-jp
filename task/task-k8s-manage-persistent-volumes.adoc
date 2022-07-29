@@ -16,6 +16,9 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 [role="lead"]
 カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用して永続ボリュームを表示できるようになります。
 
+
+NOTE: Cloud ManagerはKubernetesクラスタを監視して、バックエンドへの変更を確認し、新しいボリュームが追加されると永続ボリュームテーブルを更新します。クラスタで自動バックアップが設定されている場合、新しい永続ボリュームでは自動的にバックアップが有効になります。
+
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
 . 概要 * タブで * ボリュームの表示 * をクリックするか、 * 永続ボリューム * タブをクリックします。永続ボリュームが設定されていない場合は、を参照してください link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html["プロビジョニング"^] Astra Trident でのボリュームのプロビジョニングの詳細については、

@@ -18,6 +18,44 @@ Cloud Manager の Kubernetes の新機能をご確認ください。
 
 
 
+== 2022年7月31日
+
+* ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。
++
+ifdef::aws[]
+
+
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
+
+endif::aws[]
+
+[+]
+
+ifdef::azure[]
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
+
+endif::azure[]
+
+[+]
+
+ifdef::gcp[]
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
+
+endif::gcp[]
+
+* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、次の操作を実行できます。
++
+** ブロックストレージのファイルシステムタイプ（fsstype）を指定します
+** ブロックストレージとファイルストレージで、経済的なストレージを実現
+
+
+
+
+
+
 == 2022年7月3日
 
 * Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。

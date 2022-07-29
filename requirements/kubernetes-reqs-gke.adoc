@@ -96,7 +96,7 @@ RBAC の検証は、 Active Directory （ AD ）が有効になっている Kube
 コネクタがクラスタを検出して管理できるように、各 Kubernetes クラスタで Connector ロールを承認する必要があります。
 
 バックアップとリストア:: バックアップとリストアに必要なのは、基本的な許可だけです。
-ストレージクラスを追加する:: Cloud Manager を使用してストレージクラスを追加するには、拡張された許可が必要です。
+ストレージクラスを追加する:: 拡張された許可は、Cloud Managerを使用してストレージクラスを追加し、バックエンドへの変更についてクラスタを監視するために必要です。
 Astra Trident をインストールします:: Cloud Manager が Astra Trident をインストールするための完全な権限を付与する必要があります。
 +
 --
@@ -146,12 +146,14 @@ rules:
           - namespaces
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
           - persistentvolumes
       verbs:
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -160,6 +162,7 @@ rules:
       verbs:
           - get
           - list
+          - watch
     - apiGroups:
           - ''
       resources:
@@ -167,6 +170,7 @@ rules:
       verbs:
           - list
           - create
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -179,12 +183,14 @@ rules:
           - tridentbackends
       verbs:
           - list
+          - watch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentorchestrators
       verbs:
           - get
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -223,8 +229,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
     - apiGroups:
           - storage.k8s.io
       resources:
@@ -233,6 +241,7 @@ rules:
           - get
           - create
           - list
+          - watch
           - delete
           - patch
     - apiGroups:
@@ -244,8 +253,10 @@ rules:
       verbs:
           - get
           - list
+          - watch
           - create
           - delete
+          - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
