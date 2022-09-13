@@ -24,7 +24,7 @@ Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes ク
 
 OpenShiftクラスタを追加する前に、次のものが必要です。
 
-* で作成した「kubeconfig -sa」ファイル link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。
+* で作成した「kubeconfig -sa」ファイル link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。
 * クラスタの公開認証局（ca.crtなど）、クライアントキー（tls.keyなど）、およびクライアント証明書（tls.crtなど）のファイル。
 
 
@@ -32,7 +32,7 @@ OpenShiftクラスタを追加する前に、次のものが必要です。
 . Canvas *で、*作業環境の追加*を選択します。
 . クラウドプロバイダを選択し、「* Kubernetes Cluster *」、「* Next *」の順に選択します。
 . [クラスタのインポート]、[次へ]の順に選択します。
-. で作成した「kubeconfig -sa」ファイルをアップロードします link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。Kubernetesクラスタを選択し、* Next *を選択します。
+. で作成した「kubeconfig -sa」ファイルをアップロードします link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。Kubernetesクラスタを選択し、* Next *を選択します。
 +
 image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。"]
 

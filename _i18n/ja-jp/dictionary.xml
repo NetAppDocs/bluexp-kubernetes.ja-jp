@@ -489,12 +489,10 @@
   <block id="1d0aa2134f57ae761efb59f68c5d0044" category="paragraph">Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。</block>
   <block id="775f8efc928538f555b4520733a0825d" category="paragraph">OpenShiftクラスタを追加する前に、次のものが必要です。</block>
   <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">kubeconfigファイルを作成します</block>
-  <block id="40582f5905c5438cc50d0b3856d01bdd" category="list-text">で作成した「kubeconfig -sa」ファイル <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。</block>
   <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">クラスタの公開認証局（ca.crtなど）、クライアントキー（tls.keyなど）、およびクライアント証明書（tls.crtなど）のファイル。</block>
   <block id="17011a566ae4f46bae81e507282825fb" category="list-text">Canvas *で、*作業環境の追加*を選択します。</block>
   <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">クラウドプロバイダを選択し、「* Kubernetes Cluster *」、「* Next *」の順に選択します。</block>
   <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">[クラスタのインポート]、[次へ]の順に選択します。</block>
-  <block id="de6737449407eb5afbd77e9794daa605" category="list-text">で作成した「kubeconfig -sa」ファイルをアップロードします <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。Kubernetesクラスタを選択し、* Next *を選択します。</block>
   <block id="7c371426945f4674b445faa898f442c8" category="list-text">クラスタ証明書をアップロードします。</block>
   <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">クラスタ証明書のアップロード画面のスクリーンショット。</block>
   <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
@@ -535,4 +533,6 @@
   <block id="922c92b70dc30bbc8f03dd7e7c4abf3d" category="paragraph">生成された「kubeconfig -sa」ファイルを使用して、Cloud ManagerにOpenShiftクラスタを追加します。</block>
   <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上のKubernetesクラスタ</block>
   <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">OpenShiftにクラスタを追加します</block>
+  <block id="9a1523c9f261730956627967961b03ba" category="list-text">で作成した「kubeconfig -sa」ファイル <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">で作成した「kubeconfig -sa」ファイルをアップロードします <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。Kubernetesクラスタを選択し、* Next *を選択します。</block>
 </blocks>
