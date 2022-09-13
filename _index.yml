@@ -18,6 +18,8 @@ indexpage:
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud の Kubernetes クラスタ
       url: "/requirements/kubernetes-reqs-gke.html"
+    - title: OpenShift上のKubernetesクラスタ
+      url: "/requirements/kubernetes-reqs-openshift.html"
   - title: Kubernetes クラスタを追加
     links:
     - title: AWS にクラスタを追加します
@@ -26,6 +28,8 @@ indexpage:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud にクラスタを追加します
       url: "/task/task-kubernetes-discover-gke.html"
+    - title: OpenShiftにクラスタを追加します
+      url: "/task/task-kubernetes-discover-openshift.html"
   - title: Kubernetes クラスタを管理
     links:
     - title: Astra Trident をインストール

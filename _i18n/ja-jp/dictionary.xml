@@ -471,20 +471,68 @@
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">キャンバスから、Kubernetes作業環境をCloud Volumes ONTAP またはAmazon FSX for ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
   <block id="1ccfa8d0f204060ee0f11f2c9eb14095" category="list-text">ストレージクラスの名前を指定します。</block>
-  <block id="c6433cee19c85bb6d8ae6aa94d0f3e29" category="list-text">「* Filesystem *」または「* Block * storage」を選択します。</block>
-  <block id="41e48ca5b3f40412908aef4ef536c2c8" category="list-text">*Block* storageの場合は、File System Type（fsstype）を選択します。</block>
   <block id="a021b0b7caf02edd4dae76afb277c7fc" category="inline-image-macro">Kubernetesクラスタストレージクラスを設定する際のブロックストレージのfsstypeオプションを示すスクリーンショット</block>
-  <block id="f414d56bf773fadbe8e9de31efd23ebc" category="paragraph"><block ref="f414d56bf773fadbe8e9de31efd23ebc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c8eab1b571514f2581e71f1d62ef0a5c" category="list-text">* Block *または* Filesystem *ストレージの場合、ストレージの経済性を有効にすることができます。</block>
-  <block id="6b1835b63a667b5d28c6cf5c193ebf6d" category="inline-image-macro">ブロックまたはファイルのKubernetesストレージクラスを設定する際のストレージエコノミーオプションを示すスクリーンショット</block>
-  <block id="65d13d9fa0f964d7b46973f76d2582f8" category="paragraph"><block ref="65d13d9fa0f964d7b46973f76d2582f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecf10a2bcba311fc1c4036564af2f5af" category="admonition">Cloud ManagerはKubernetesクラスタを監視して、バックエンドへの変更を確認し、新しいボリュームが追加されると永続ボリュームテーブルを更新します。クラスタで自動バックアップが設定されている場合、新しい永続ボリュームでは自動的にバックアップが有効になります。</block>
   <block id="4e3c799b30496977a0099e6679f9e67f" category="list-text">拡張された許可は、Cloud Managerを使用してストレージクラスを追加し、バックエンドへの変更についてクラスタを監視するために必要です。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">ストレージクラスを定義する</block>
-  <block id="4d7aa2608f19ed6007e314a1e829a7f0" category="list-text">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、次の操作を実行できます。</block>
-  <block id="41ee8bf0ce0084d7bbc703ebd0503f3f" category="list-text">ブロックストレージのファイルシステムタイプ（fsstype）を指定します</block>
-  <block id="3fce6f9d08f0fed5c965732f940ad498" category="list-text">ブロックストレージとファイルストレージで、経済的なストレージを実現</block>
   <block id="f7fcb1352aec0188a9f059c28c8b96f2" category="list-text">ボリュームの拡張、ボリュームバインド、およびデフォルトのストレージクラスに関するオプションを選択します。「 * 次へ * 」をクリックします。</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
+  <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">自己管理OpenShiftクラスタをCloud Managerにインポートできるようになりました。</block>
+  <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">OpenShiftでのKubernetesクラスタの要件</block>
+  <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
+  <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">Cloud ManagerにOpenShiftクラスタを追加します</block>
+  <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
+  <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>をクリックし、ブロックストレージのファイルシステムタイプ（fstype）を指定できるようになりました。</block>
+  <block id="3c2adb793409d16c72d81d49ec7cd745" category="summary">Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。</block>
+  <block id="1d0aa2134f57ae761efb59f68c5d0044" category="paragraph">Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。</block>
+  <block id="775f8efc928538f555b4520733a0825d" category="paragraph">OpenShiftクラスタを追加する前に、次のものが必要です。</block>
+  <block id="d795d581b00d494d8c6250bb5e1fcf89" category="inline-link-macro">kubeconfigファイルを作成します</block>
+  <block id="40582f5905c5438cc50d0b3856d01bdd" category="list-text">で作成した「kubeconfig -sa」ファイル <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7076b96b4cfb7668eac66eb624334ad" category="list-text">クラスタの公開認証局（ca.crtなど）、クライアントキー（tls.keyなど）、およびクライアント証明書（tls.crtなど）のファイル。</block>
+  <block id="17011a566ae4f46bae81e507282825fb" category="list-text">Canvas *で、*作業環境の追加*を選択します。</block>
+  <block id="4c031f22edba9db9f5529644e071eb8a" category="list-text">クラウドプロバイダを選択し、「* Kubernetes Cluster *」、「* Next *」の順に選択します。</block>
+  <block id="02ebc3697d40233b9c554520eda51f25" category="list-text">[クラスタのインポート]、[次へ]の順に選択します。</block>
+  <block id="de6737449407eb5afbd77e9794daa605" category="list-text">で作成した「kubeconfig -sa」ファイルをアップロードします <block ref="8753453e8f212c09749310e708af84b1" category="inline-link-macro-rx"></block>。Kubernetesクラスタを選択し、* Next *を選択します。</block>
+  <block id="7c371426945f4674b445faa898f442c8" category="list-text">クラスタ証明書をアップロードします。</block>
+  <block id="40a58da0341e721e033a4cf334d62ab0" category="inline-image-macro">クラスタ証明書のアップロード画面のスクリーンショット。</block>
+  <block id="95a989ce51f5125f1cda095e21371ee7" category="paragraph"><block ref="95a989ce51f5125f1cda095e21371ee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11fdcf36bc2c8b5bfd93e6121adc30e4" category="list-text">「* Filesystem *」または「* Block * storage」を選択します。*Block* storageで、File System Type（fsstype）を選択します。</block>
+  <block id="1688bddc71d0ab83d2459fc2d264cbe0" category="paragraph"><block ref="1688bddc71d0ab83d2459fc2d264cbe0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="157f04e8460a66677d3d8d3b9e7d3b2a" category="summary">Cloud Managerを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。</block>
+  <block id="28c5fcd62b4a87354b50e4967cd0022a" category="list-text">Kubernetesクラスタをインポートおよび管理するには、Cloud Manager Connectorが必要です。クラウドプロバイダに必要な権限を持つ新しいコネクタを作成するか、既存のコネクタを使用する必要があります。</block>
+  <block id="78f4011ce4eec11823de490a29f344e7" category="inline-link-macro">AWSコネクタ</block>
+  <block id="cffb555a0390870f6d957bab2b87008e" category="list-text"><block ref="cffb555a0390870f6d957bab2b87008e" category="inline-link-macro-rx"></block></block>
+  <block id="625f50cfccef81e43215d5f35b6122fe" category="inline-link-macro">Azure Connectorの場合</block>
+  <block id="c8a8cbc981f0028a05bbbdbdef98749c" category="list-text"><block ref="c8a8cbc981f0028a05bbbdbdef98749c" category="inline-link-macro-rx"></block></block>
+  <block id="6d75f957aed766005dc3be4d9f8c4ec5" category="inline-link-macro">Google Cloud Connectorの場合</block>
+  <block id="e51199bdde0640d2bca477ecdc555e8f" category="list-text"><block ref="e51199bdde0640d2bca477ecdc555e8f" category="inline-link-macro-rx"></block></block>
+  <block id="9703b589f82c3c63870b38bf11559988" category="list-text">Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。</block>
+  <block id="890de07cb51c2692baea480106b633e1" category="list-text">RBAC許可を使用したKubernetes構成ファイル（kubeconfig）</block>
+  <block id="01c29ea434ec706b9c6a08114a6edec6" category="list-text">OpenShiftクラスタをインポートするには、さまざまな機能を有効にするために必要なRBAC許可を含むkubeconfigファイルが必要です。 <block ref="e356c2da27abb1a00cc68449c7fb7c0f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="71555b5b57250c45d25fb80d40ba1a02" category="list-text">バックアップとリストア：バックアップとリストアに必要なのは基本的な許可のみです。</block>
+  <block id="da3cca107e2faeb6cc5e537d940ecafc" category="list-text">ストレージクラスを追加：Cloud Managerを使用してストレージクラスを追加し、バックエンドに対する変更がないかクラスタを監視するには、拡張された許可が必要です。</block>
+  <block id="02bb014d52bfff4da8649fb7d63c8c4e" category="list-text">Astra Tridentをインストール：Cloud ManagerがAstra Tridentをインストールするための完全な権限を付与する必要があります。</block>
+  <block id="d35cb258bf38db8a375c6b851aef5d80" category="section-title">kubeconfigファイルを作成します</block>
+  <block id="df0933cfbf38c818728cae3b18f61b03" category="paragraph">OpenShift CLIを使用して、Cloud Managerにインポートするkubeconfigファイルを作成します。</block>
+  <block id="6bc1e2f01411b6d08baccbe5ffe9dc00" category="list-text">パブリックURLにある「OC login」を使用して、管理ユーザとともにOpenShift CLIにログインします。</block>
+  <block id="5f85438ae0f2c9122a5cf54e8e098c98" category="list-text">次の手順でサービスアカウントを作成します。</block>
+  <block id="565ca50cb95f086800a9a4312c2bf4a1" category="list-text">「OC-service-account.yaml」という名前のサービスアカウントファイルを作成します。</block>
+  <block id="210c5331ab46caa141e6ac9d5aeb1bee" category="paragraph">名前と名前空間を必要に応じて調整します。ここで変更を行った場合は、以降の手順でも同じ変更を適用する必要があります。</block>
+  <block id="605443509a67749999ab3b0d3ba43e8b" category="list-text">サービスアカウントを適用します。</block>
+  <block id="d7f435fa7cf0bd0868423fe3be23c07e" category="list-text">許可要件に基づいて、カスタムロールバインディングを作成します。</block>
+  <block id="4759a5a8a6e530a07d366d458377d18b" category="list-text">「OC-clusterrolebinding.yaml」という名前の「ClusterRoleBinding」ファイルを作成します。</block>
+  <block id="28f58929cb9b848d6403270c1e3c1c7b" category="list-text">クラスタに必要に応じてRBAC許可を設定します。</block>
+  <block id="0b644a2f3f62a8ba3f0ed9c3194a6f5d" category="paragraph">フル管理者権限を付与し、Cloud ManagerにAstra Tridentをインストールできるようにします。</block>
+  <block id="c6c2bc2133c73ae2516508de9a2b5869" category="list-text">クラスタロールバインドを適用します。</block>
+  <block id="b6e00a7dda090ccd5afd1c904d80548c" category="list-text">「 &lt;context&gt; 」をインストールの正しいコンテキストに置き換えて、サービスアカウントのシークレットをリストします。</block>
+  <block id="f087976277d273660b942918b43af841" category="paragraph">出力の末尾は次のようになります。</block>
+  <block id="34e6e63f528ac4e4d0300281b4ba2af5" category="paragraph">'ecsレット ' 配列内の各要素のインデックスは 0 から始まります上の例では、「OC-service-account-dockercfg-vhz87」のインデックスは0になり、「OC-service-account-token-r59kr」のインデックスは1になります。出力で、 "token" という単語が含まれるサービスアカウント名のインデックスをメモしてください。</block>
+  <block id="d3727d544efa902d0381ec79cec3d488" category="list-text">次のように kubeconfig を生成します。</block>
+  <block id="ed6be01d66e94b422222a328f085d0bc" category="list-text">「 create-kubeconfig .sh` ファイル」を作成します。次のスクリプトの先頭にある「 token_index 」を正しい値に置き換えます。</block>
+  <block id="7d164f3971b504d6203cf274cc77dd35" category="list-text">コマンドをソースにし、 Kubernetes クラスタに適用します。</block>
+  <block id="922c92b70dc30bbc8f03dd7e7c4abf3d" category="paragraph">生成された「kubeconfig -sa」ファイルを使用して、Cloud ManagerにOpenShiftクラスタを追加します。</block>
+  <block id="0c6a9a1e3ba06deae014e58e617bd162" category="sidebar">OpenShift上のKubernetesクラスタ</block>
+  <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">OpenShiftにクラスタを追加します</block>
 </blocks>

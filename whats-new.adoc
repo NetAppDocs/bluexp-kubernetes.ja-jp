@@ -18,6 +18,16 @@ Cloud Manager の Kubernetes の新機能をご確認ください。
 
 
 
+== 2022年9月18日
+
+自己管理OpenShiftクラスタをCloud Managerにインポートできるようになりました。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShiftでのKubernetesクラスタの要件"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["Cloud ManagerにOpenShiftクラスタを追加します"]
+
+
+
+
 == 2022年7月31日
 
 * ストレージクラスの新しい「-watch` verb」を使用して、YAMLの設定をバックアップおよびリストアできるようになりました。Cloud ManagerはKubernetesクラスタバックエンドに加えられた変更を監視し、クラスタで自動バックアップが設定されている場合は、新しい永続ボリュームのバックアップを自動的に有効にすることができます。
@@ -30,12 +40,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 +
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
 
-* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、次の操作を実行できます。
-+
-** ブロックストレージのファイルシステムタイプ（fsstype）を指定します
-** ブロックストレージとファイルストレージで、経済的なストレージを実現
-
-
+* いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]をクリックし、ブロックストレージのファイルシステムタイプ（fstype）を指定できるようになりました。
 
 
 

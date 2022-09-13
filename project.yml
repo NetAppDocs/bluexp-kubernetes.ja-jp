@@ -32,6 +32,8 @@ sidebar:
     - title: Google Cloud の Kubernetes クラスタ
       flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
+    - title: OpenShift上のKubernetesクラスタ
+      url: "/requirements/kubernetes-reqs-openshift.html"
   - title: Kubernetes クラスタを追加
     entries:
     - title: AWS にクラスタを追加します
@@ -43,6 +45,8 @@ sidebar:
     - title: Google Cloud にクラスタを追加します
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
+    - title: OpenShiftにクラスタを追加します
+      url: "/task/task-kubernetes-discover-openshift.html"
   - title: Kubernetes クラスタを管理
     url: "/concept-manage-k8s.html"
     entries:

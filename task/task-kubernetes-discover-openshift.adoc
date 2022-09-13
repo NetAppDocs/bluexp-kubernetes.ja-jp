@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-openshift.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
+summary: Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。 
+---
+= Cloud ManagerにOpenShiftクラスタを追加します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。
+
+
+
+== クラスタをインポートします
+
+Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes クラスタをインポートできます。
+
+OpenShiftクラスタを追加する前に、次のものが必要です。
+
+* で作成した「kubeconfig -sa」ファイル link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。
+* クラスタの公開認証局（ca.crtなど）、クライアントキー（tls.keyなど）、およびクライアント証明書（tls.crtなど）のファイル。
+
+
+.手順
+. Canvas *で、*作業環境の追加*を選択します。
+. クラウドプロバイダを選択し、「* Kubernetes Cluster *」、「* Next *」の順に選択します。
+. [クラスタのインポート]、[次へ]の順に選択します。
+. で作成した「kubeconfig -sa」ファイルをアップロードします link:../requirements/kubernetes-reqs-openshift.html/#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。Kubernetesクラスタを選択し、* Next *を選択します。
++
+image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。"]
+
+. クラスタ証明書をアップロードします。
++
+image:screenshot-oc-certs.png["クラスタ証明書のアップロード画面のスクリーンショット。"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。

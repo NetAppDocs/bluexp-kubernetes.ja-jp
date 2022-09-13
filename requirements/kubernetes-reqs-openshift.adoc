@@ -1,0 +1,375 @@
+---
+sidebar: sidebar 
+permalink: /requirements/kubernetes-reqs-openshift.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
+summary: Cloud Managerを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。 
+---
+= OpenShiftでのKubernetesクラスタの要件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cloud Managerを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。
+
+
+
+== 要件
+
+Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に、
+
+
+Astra Trident をアップグレードするには、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["オペレータにアップグレードしてください"^]。
+
+Cloud Volumes ONTAP:: クラスタのバックエンドストレージとして Cloud Volumes ONTAP が設定されている必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
+Cloud Manager Connector の略:: Kubernetesクラスタをインポートおよび管理するには、Cloud Manager Connectorが必要です。クラウドプロバイダに必要な権限を持つ新しいコネクタを作成するか、既存のコネクタを使用する必要があります。
++
+--
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWSコネクタ"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure Connectorの場合"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connectorの場合"]
+
+
+--
+ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。
+RBAC許可を使用したKubernetes構成ファイル（kubeconfig）:: OpenShiftクラスタをインポートするには、さまざまな機能を有効にするために必要なRBAC許可を含むkubeconfigファイルが必要です。 <<Create a kubeconfig file>>。
++
+--
+* バックアップとリストア：バックアップとリストアに必要なのは基本的な許可のみです。
+* ストレージクラスを追加：Cloud Managerを使用してストレージクラスを追加し、バックエンドに対する変更がないかクラスタを監視するには、拡張された許可が必要です。
+* Astra Tridentをインストール：Cloud ManagerがAstra Tridentをインストールするための完全な権限を付与する必要があります。
++
+
+NOTE: Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。
+
+
+
+--
+
+
+
+
+== kubeconfigファイルを作成します
+
+OpenShift CLIを使用して、Cloud Managerにインポートするkubeconfigファイルを作成します。
+
+.手順
+. パブリックURLにある「OC login」を使用して、管理ユーザとともにOpenShift CLIにログインします。
+. 次の手順でサービスアカウントを作成します。
++
+.. 「OC-service-account.yaml」という名前のサービスアカウントファイルを作成します。
++
+名前と名前空間を必要に応じて調整します。ここで変更を行った場合は、以降の手順でも同じ変更を適用する必要があります。
+
++
+[source, cli]
+----
+oc-service-account.yaml
+----
++
+[source, cli]
+----
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: oc-service-account
+  namespace: default
+----
+.. サービスアカウントを適用します。
++
+[source, cli]
+----
+kubectl apply -f oc-service-account.yaml
+----
+
+
+. 許可要件に基づいて、カスタムロールバインディングを作成します。
++
+.. 「OC-clusterrolebinding.yaml」という名前の「ClusterRoleBinding」ファイルを作成します。
++
+[source, cli]
+----
+oc-clusterrolebinding.yaml
+----
+.. クラスタに必要に応じてRBAC許可を設定します。
++
+[role="tabbed-block"]
+====
+.バックアップ / リストア
+--
+Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+          - watch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default
+----
+--
+.ストレージクラス
+--
+拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。
+
+[source, yaml]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - secrets
+          - namespaces
+          - persistentvolumeclaims
+          - persistentvolumes
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - get
+          - create
+          - list
+          - watch
+          - delete
+          - patch
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+          - tridentorchestrators
+          - tridentbackendconfigs
+      verbs:
+          - get
+          - list
+          - watch
+          - create
+          - delete
+          - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cloudmanager-access-clusterrole
+subjects:
+    - kind: ServiceAccount
+      name: oc-service-account
+      namespace: default
+----
+--
+.Trident をインストール
+--
+フル管理者権限を付与し、Cloud ManagerにAstra Tridentをインストールできるようにします。
+
+[source, cli]
+----
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cloudmanager-access-clusterrole
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: oc-service-account
+  namespace: default
+----
+--
+====
+.. クラスタロールバインドを適用します。
++
+[source, cli]
+----
+kubectl apply -f oc-clusterrolebinding.yaml
+----
+
+
+. 「 <context> 」をインストールの正しいコンテキストに置き換えて、サービスアカウントのシークレットをリストします。
++
+[source, cli]
+----
+kubectl get serviceaccount oc-service-account --context <context> --namespace default -o json
+----
++
+出力の末尾は次のようになります。
+
++
+[source, cli]
+----
+"secrets": [
+{ "name": "oc-service-account-dockercfg-vhz87"},
+{ "name": "oc-service-account-token-r59kr"}
+]
+----
++
+'ecsレット ' 配列内の各要素のインデックスは 0 から始まります上の例では、「OC-service-account-dockercfg-vhz87」のインデックスは0になり、「OC-service-account-token-r59kr」のインデックスは1になります。出力で、 "token" という単語が含まれるサービスアカウント名のインデックスをメモしてください。
+
+. 次のように kubeconfig を生成します。
++
+.. 「 create-kubeconfig .sh` ファイル」を作成します。次のスクリプトの先頭にある「 token_index 」を正しい値に置き換えます。
++
+[source, cli]
+----
+create-kubeconfig.sh
+----
++
+[source, sh]
+----
+# Update these to match your environment.
+# Replace TOKEN_INDEX with the correct value
+# from the output in the previous step. If you
+# didn't change anything else above, don't change
+# anything else here.
+
+SERVICE_ACCOUNT_NAME=oc-service-account
+NAMESPACE=default
+NEW_CONTEXT=oc
+KUBECONFIG_FILE='kubeconfig-sa'
+
+CONTEXT=$(kubectl config current-context)
+
+SECRET_NAME=$(kubectl get serviceaccount ${SERVICE_ACCOUNT_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.secrets[TOKEN_INDEX].name}')
+TOKEN_DATA=$(kubectl get secret ${SECRET_NAME} \
+  --context ${CONTEXT} \
+  --namespace ${NAMESPACE} \
+  -o jsonpath='{.data.token}')
+
+TOKEN=$(echo ${TOKEN_DATA} | base64 -d)
+
+# Create dedicated kubeconfig
+# Create a full copy
+kubectl config view --raw > ${KUBECONFIG_FILE}.full.tmp
+
+# Switch working context to correct context
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp config use-context ${CONTEXT}
+
+# Minify
+kubectl --kubeconfig ${KUBECONFIG_FILE}.full.tmp \
+  config view --flatten --minify > ${KUBECONFIG_FILE}.tmp
+
+# Rename context
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  rename-context ${CONTEXT} ${NEW_CONTEXT}
+
+# Create token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-credentials ${CONTEXT}-${NAMESPACE}-token-user \
+  --token ${TOKEN}
+
+# Set context to use token user
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --user ${CONTEXT}-${NAMESPACE}-token-user
+
+# Set context to correct namespace
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  set-context ${NEW_CONTEXT} --namespace ${NAMESPACE}
+
+# Flatten/minify kubeconfig
+kubectl config --kubeconfig ${KUBECONFIG_FILE}.tmp \
+  view --flatten --minify > ${KUBECONFIG_FILE}
+
+# Remove tmp
+rm ${KUBECONFIG_FILE}.full.tmp
+rm ${KUBECONFIG_FILE}.tmp
+----
+.. コマンドをソースにし、 Kubernetes クラスタに適用します。
++
+[source, cli]
+----
+source create-kubeconfig.sh
+----
+
+
+
+
+生成された「kubeconfig -sa」ファイルを使用して、Cloud ManagerにOpenShiftクラスタを追加します。
