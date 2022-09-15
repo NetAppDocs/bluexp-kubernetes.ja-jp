@@ -304,9 +304,6 @@
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine （ GKE ）</block>
   <block id="213acaa88814071409958acdc9192518" category="section-title">サポートされている Astra Trident 環境</block>
   <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">前提条件を確認します</block>
-  <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">オペレータにアップグレードしてください</block>
-  <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">Astra Trident をアップグレードするには、 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>。</block>
-  <block id="c4541926fe853a3614406482ac212fff" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に</block>
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">バックアップとリストア</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">バックアップとリストアに必要なのは、基本的な許可だけです。</block>
   <block id="e38848cde65bc177038607eba51773c3" category="list-text">Astra Trident をインストールします</block>
@@ -319,7 +316,6 @@
   <block id="a296388d715a55c1152745b7367fc0c5" category="paragraph">拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。</block>
   <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">Trident をインストール</block>
   <block id="47b31bee79140af784a118e6eb34fdbd" category="paragraph">コマンドラインを使用して完全な権限を付与し、 Cloud Manager が Astra Trident をインストールできるようにします。</block>
-  <block id="74ac826b742735257c4c43faffe62b41" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に、</block>
   <block id="05a0030833e70e4af624c3716f988104" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。</block>
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">異なる機能を有効にするには、異なる許可が必要です。</block>
@@ -535,4 +531,6 @@
   <block id="0ec3c7d00da8bde7e119875963ce517b" category="sidebar">OpenShiftにクラスタを追加します</block>
   <block id="9a1523c9f261730956627967961b03ba" category="list-text">で作成した「kubeconfig -sa」ファイル <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。</block>
   <block id="d68d1fb21874c919e4b91a231a5f7974" category="list-text">で作成した「kubeconfig -sa」ファイルをアップロードします <block ref="853bbee8a9a9e7ed0c6dbe47e266bf3d" category="inline-link-macro-rx"></block>。Kubernetesクラスタを選択し、* Next *を選択します。</block>
+  <block id="9492e4195bc2860d8494e098fbce7244" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Tridentは、Cloud Managerから直接インストールまたはアップグレードできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に、</block>
+  <block id="bfb0695c22e145f8bb8fffaba822ec00" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Tridentは、Cloud Managerから直接インストールまたはアップグレードできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に</block>
 </blocks>
