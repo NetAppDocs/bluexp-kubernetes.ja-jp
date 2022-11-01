@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /requirements/kubernetes-reqs-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support 
-summary: Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine クラスタ（ GKE ）と自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。 
+summary: '管理対象のGoogle Kubernetes Engine Cluster（GKE）および自動管理型Kubernetesクラスタは、BlueXPを使用してGoogleで追加および管理できます。BlueXPにクラスタを追加する前に"次の要件が満たされていることを確認します' 
 ---
 = Google Cloud の Kubernetes クラスタの要件
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager を使用して、 Google で管理対象 Google Kubernet
 
 
 [role="lead"]
-Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。
+管理対象のGoogle Kubernetes Engine（GKE）クラスタと、BlueXPを使用してGoogleで自己管理型Kubernetesクラスタを追加および管理できます。BlueXPにクラスタを追加する前に'次の要件が満たされていることを確認します
 
 
 NOTE: このトピックでは、 _Kubernetes cluster_where 構成は、 GKE クラスタと自己管理型 Kubernetes クラスタで同じです。クラスタタイプは設定が異なる場所で指定します。
@@ -23,18 +23,18 @@ NOTE: このトピックでは、 _Kubernetes cluster_where 構成は、 GKE ク
 
 == 要件
 
-Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Tridentは、Cloud Managerから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に
-Cloud Volumes ONTAP:: Cloud Volumes ONTAP は、 Kubernetes クラスタと同じテナンシーアカウント、ワークスペース、コネクタで Cloud Manager に配置する必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
-Cloud Manager Connector の略:: 必要な権限を持つ Connector が Google で実行されている必要があります。  a Connector,詳細は以下をご覧ください。
+Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Astra Tridentは、BlueXPから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に
+Cloud Volumes ONTAP:: Cloud Volumes ONTAP は、Kubernetesクラスタと同じテナンシーアカウント、ワークスペース、コネクタを使用してBlueXPに配置する必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
+BlueXPコネクタ:: 必要な権限を持つ Connector が Google で実行されている必要があります。  a Connector,詳細は以下をご覧ください。
 ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。  networking requirements,詳細は以下をご覧ください。
-RBAC 許可:: Cloud Manager は、 Active Directory を使用するかどうかに関係なく、 RBAC 対応のクラスタをサポートします。Cloud Manager Connector ロールは、各 GKE クラスタで許可されている必要があります。  up RBAC authorization,詳細は以下をご覧ください。
+RBAC 許可:: BlueXPは、Active Directoryを使用するかどうかに関係なく、RBAC対応のクラスタをサポートしています。BlueXPコネクタの役割は、各GKEクラスタで許可されている必要があります。  up RBAC authorization,詳細は以下をご覧ください。
 
 
 
 
 == コネクタを準備します
 
-Kubernetes クラスタを検出および管理するには、 Google の Cloud Manager Connector が必要です。新しいコネクターを作成するか、必要な権限を持つ既存のコネクターを使用する必要があります。
+Kubernetesクラスタを検出および管理するには、GoogleのBlueXPコネクタが必要です。新しいコネクターを作成するか、必要な権限を持つ既存のコネクターを使用する必要があります。
 
 
 
@@ -42,7 +42,7 @@ Kubernetes クラスタを検出および管理するには、 Google の Cloud 
 
 次のリンクのいずれかの手順に従います。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Cloud Manager からコネクタを作成します"^] （推奨）
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["BlueXPからコネクタを作成します"^] （推奨）
 * link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["既存の Linux ホストにコネクタをインストールします"^]
 
 
@@ -92,17 +92,17 @@ RBAC の検証は、 Active Directory （ AD ）が有効になっている Kube
 コネクタがクラスタを検出して管理できるように、各 Kubernetes クラスタで Connector ロールを承認する必要があります。
 
 バックアップとリストア:: バックアップとリストアに必要なのは、基本的な許可だけです。
-ストレージクラスを追加する:: 拡張された許可は、Cloud Managerを使用してストレージクラスを追加し、バックエンドへの変更についてクラスタを監視するために必要です。
-Astra Trident をインストールします:: Cloud Manager が Astra Trident をインストールするための完全な権限を付与する必要があります。
+ストレージクラスを追加する:: BlueXPを使用してストレージクラスを追加し、バックエンドへの変更がないかクラスタを監視するには、拡張された許可が必要です。
+Astra Trident をインストールします:: BlueXPがAstra Tridentをインストールするためには、完全な権限を付与する必要があります。
 +
 --
 
-NOTE: Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。
+NOTE: Astra Tridentをインストールすると、BlueXPはAstra Tridentバックエンドと、Astra Tridentのクレデンシャルを含むKubernetesシークレットをインストールして、ストレージクラスタと通信する必要があります。
 
 --
 
 
-YAML ファイルで「 Subjects:name:` 」を設定するには、 Cloud Manager の一意の ID を知っている必要があります。
+を設定します ``subjects: name:`` YAMLファイルで、BlueXPの一意のIDを知っている必要があります。
 
 一意の ID は、次の 2 つの方法のいずれかで確認できます。
 
@@ -204,7 +204,7 @@ roleRef:
 --
 .ストレージクラス
 --
-拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。
+BlueXPを使用してストレージクラスを追加するには'拡張された認証を追加します
 
 [source, yaml]
 ----
@@ -270,7 +270,7 @@ roleRef:
 --
 .Trident をインストール
 --
-コマンドラインを使用して完全な権限を付与し、 Cloud Manager が Astra Trident をインストールできるようにします。
+コマンドラインを使用して完全な認証を行い、BlueXPでAstra Tridentをインストールできるようにします。
 
 [source, cli]
 ----

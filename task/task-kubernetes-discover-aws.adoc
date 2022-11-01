@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-aws.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
-summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Cloud Manager に追加して、永続ボリュームの Amazon S3 へのバックアップを開始できるようにします。 
+summary: Amazon Elastic Kubernetes Service（Amazon EKS）クラスタをBlueXPに追加して、永続ボリュームのAmazon S3へのバックアップを開始できるようにします。 
 ---
-= Cloud Manager に Amazon Kubernetes クラスタを追加
+= Amazon KubernetesクラスタをBlueXPに追加します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Clo
 
 
 [role="lead"]
-Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Amazon S3 にバックアップできます。
+Kubernetesクラスタを検出またはBlueXPにインポートすることで、永続ボリュームをAmazon S3にバックアップできます。
 
 
 
@@ -35,9 +35,9 @@ image:screenshot-discover-kubernetes-aws-2.png["選択した AWS リージョン
 
 
 
-Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+BlueXPはKubernetesクラスタをCanvasに追加します。
 
-image:screenshot-kubernetes-canvas.png["Kubernetes クラスタを示す Cloud Manager のキャンバスのスクリーンショット。"]
+image:screenshot-kubernetes-canvas.png["Kubernetesクラスタを示すBlueXPのCanvasのスクリーンショット。"]
 
 
 
@@ -56,4 +56,4 @@ image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポート
 . Kubernetes クラスタを選択し、 * Next * をクリックします。
 
 
-Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+BlueXPはKubernetesクラスタをCanvasに追加します。

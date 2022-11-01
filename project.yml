@@ -69,6 +69,6 @@ sidebar:
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: Cloud Manager のすべてのドキュメント
+  sidebar_label: BlueXPのすべてのマニュアル

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-storage-classes.html 
 keywords: kubernetes, k8s, add storage class, remove storage class 
-summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。 
+summary: 管理対象のKubernetesクラスタをCanvasに追加すると、BlueXPを使用してストレージクラスを管理できるようになります。 
 ---
 = ストレージクラスを管理する
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 
 [role="lead"]
-カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用してストレージクラスを管理できるようになります。
+キャンバスに管理対象のKubernetesクラスタを追加したら、BlueXPを使用してストレージクラスを管理できます。
 
 
 NOTE: ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。Canvas上のクラスタをダブルクリックすると、アクションページが開き、ストレージクラスが追加されます。

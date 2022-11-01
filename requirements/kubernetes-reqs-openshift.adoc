@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /requirements/kubernetes-reqs-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
-summary: Cloud Managerを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。 
+summary: 'BlueXPを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。BlueXPにクラスタを追加する前に"次の要件が満たされていることを確認します' 
 ---
 = OpenShiftでのKubernetesクラスタの要件
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: Cloud Managerを使用して、自己管理型OpenShift Kubernetesク�
 
 
 [role="lead"]
-Cloud Managerを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。
+BlueXPを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。BlueXPにクラスタを追加する前に'次の要件が満たされていることを確認します
 
 
 
 == 要件
 
-Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Tridentは、Cloud Managerから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に、
+Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Astra Tridentは、BlueXPから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に、
 Cloud Volumes ONTAP:: クラスタのバックエンドストレージとして Cloud Volumes ONTAP が設定されている必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
-Cloud Manager Connector の略:: Kubernetesクラスタをインポートおよび管理するには、Cloud Manager Connectorが必要です。クラウドプロバイダに必要な権限を持つ新しいコネクタを作成するか、既存のコネクタを使用する必要があります。
+BlueXPコネクタ:: Kubernetesクラスタをインポートおよび管理するには、BlueXPコネクタが必要です。クラウドプロバイダに必要な権限を持つ新しいコネクタを作成するか、既存のコネクタを使用する必要があります。
 +
 --
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWSコネクタ"]
@@ -36,11 +36,11 @@ RBAC許可を使用したKubernetes構成ファイル（kubeconfig）:: OpenShif
 +
 --
 * バックアップとリストア：バックアップとリストアに必要なのは基本的な許可のみです。
-* ストレージクラスを追加：Cloud Managerを使用してストレージクラスを追加し、バックエンドに対する変更がないかクラスタを監視するには、拡張された許可が必要です。
-* Astra Tridentをインストール：Cloud ManagerがAstra Tridentをインストールするための完全な権限を付与する必要があります。
+* ストレージクラスの追加：BlueXPを使用してストレージクラスを追加し、バックエンドへの変更がないかクラスタを監視するには、拡張された許可が必要です。
+* Install Astra Trident：BlueXPがAstra Tridentをインストールするための完全な権限を付与する必要があります。
 +
 
-NOTE: Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。
+NOTE: Astra Tridentをインストールすると、BlueXPはAstra Tridentバックエンドと、Astra Tridentのクレデンシャルを含むKubernetesシークレットをインストールして、ストレージクラスタと通信する必要があります。
 
 
 
@@ -51,7 +51,7 @@ NOTE: Astra Trident をインストールすると、 Cloud Manager は Astra Tr
 
 == kubeconfigファイルを作成します
 
-OpenShift CLIを使用して、Cloud Managerにインポートするkubeconfigファイルを作成します。
+OpenShift CLIを使用して、BlueXPにインポートするkubeconfigファイルを作成します。
 
 .手順
 . パブリックURLにある「OC login」を使用して、管理ユーザとともにOpenShift CLIにログインします。
@@ -174,7 +174,7 @@ subjects:
 --
 .ストレージクラス
 --
-拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。
+BlueXPを使用してストレージクラスを追加するには'拡張された認証を追加します
 
 [source, yaml]
 ----
@@ -240,7 +240,7 @@ subjects:
 --
 .Trident をインストール
 --
-フル管理者権限を付与し、Cloud ManagerにAstra Tridentをインストールできるようにします。
+フル管理者権限を付与し、BlueXPでAstra Tridentをインストールできるようにします。
 
 [source, cli]
 ----
@@ -368,4 +368,4 @@ source create-kubeconfig.sh
 
 
 
-生成された「kubeconfig -sa」ファイルを使用して、Cloud ManagerにOpenShiftクラスタを追加します。
+結果を使用します `kubeconfig-sa` ファイルを使用して、OpenShiftクラスタをBlueXPに追加します。

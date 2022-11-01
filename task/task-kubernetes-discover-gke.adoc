@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
-summary: Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Google Cloud にバックアップできます。 
+summary: Kubernetesクラスタを検出またはBlueXPにインポートすると、永続ボリュームをGoogle Cloudにバックアップできます。 
 ---
-= Cloud Manager に Google Cloud Kubernetes クラスタを追加
+= Google Cloud KubernetesクラスタをBlueXPに追加します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Kubernetes クラスタを検出または Cloud Manager にインポー
 
 
 [role="lead"]
-Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Google Cloud にバックアップできます。
+Kubernetesクラスタを検出またはBlueXPにインポートすると、永続ボリュームをGoogle Cloudにバックアップできます。
 
 
 
@@ -39,9 +39,9 @@ image:screenshot-k8s-gke-discover.png["選択した Kubernetes クラスタを�
 
 
 
-Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+BlueXPはKubernetesクラスタをCanvasに追加します。
 
-image:screenshot-k8s-gke-canvas.png["Kubernetes クラスタを示す Cloud Manager のキャンバスのスクリーンショット。"]
+image:screenshot-k8s-gke-canvas.png["Kubernetesクラスタを示すBlueXPのCanvasのスクリーンショット。"]
 
 
 
@@ -65,4 +65,4 @@ image:screenshot-k8s-gke-import-1.png["Kubernetes クラスタのインポート
 
 
 
-Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+BlueXPはKubernetesクラスタをCanvasに追加します。

@@ -1,6 +1,6 @@
 ---
 indexpage:
-  lead: 高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager に追加します。
+  lead: 管理対象のKubernetesクラスタをBlueXPに追加して、高度なデータ管理を実現します。
   tiles:
   - title: はじめに
     links:
@@ -42,7 +42,7 @@ indexpage:
       url: "/task/task-k8s-manage-remove-cluster.html"
     - title: データサービスを有効化
       url: "/task/task-kubernetes-enable-services.html"
-  - title: Cloud Manager のヘルプを参照してください
+  - title: BlueXPのヘルプを参照してください
     links:
     - title: サポートに登録します
       url: "/support/task-support-registration.html"

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: /task/task-kubernetes-discover-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, kubernetes support, import kubernetes cluster, import 
-summary: Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。 
+summary: 自己管理OpenShiftクラスタをBlueXPにインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。 
 ---
-= Cloud ManagerにOpenShiftクラスタを追加します
+= BlueXPにOpenShiftクラスタを追加します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Managerに自己管理OpenShiftクラスタをインポートし�
 
 
 [role="lead"]
-Cloud Managerに自己管理OpenShiftクラスタをインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。
+自己管理OpenShiftクラスタをBlueXPにインポートして、クラウドプロバイダへの永続ボリュームのバックアップを開始できるようにします。
 
 
 
@@ -42,4 +42,4 @@ image:screenshot-oc-certs.png["クラスタ証明書のアップロード画面�
 
 
 
-Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+BlueXPはKubernetesクラスタをCanvasに追加します。

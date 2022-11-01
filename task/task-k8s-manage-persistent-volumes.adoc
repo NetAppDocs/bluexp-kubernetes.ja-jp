@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-persistent-volumes.html 
 keywords: kubernetes, k8s, view persistent volume 
-summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して接続されている永続ボリュームを表示できます。 
+summary: 管理対象のKubernetesクラスタをCanvasに追加すると、接続されている永続ボリュームをBlueXPで表示できるようになります。 
 ---
 = 永続ボリュームを表示します
 :hardbreaks:
@@ -14,10 +14,10 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 
 [role="lead"]
-カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用して永続ボリュームを表示できるようになります。
+キャンバスに管理対象のKubernetesクラスタを追加すると、BlueXPを使用して永続ボリュームを表示できるようになります。
 
 
-NOTE: Cloud ManagerはKubernetesクラスタを監視して、バックエンドへの変更を確認し、新しいボリュームが追加されると永続ボリュームテーブルを更新します。クラスタで自動バックアップが設定されている場合、新しい永続ボリュームでは自動的にバックアップが有効になります。
+NOTE: BlueXPは、Kubernetesクラスタでバックエンドの変更を監視し、新しいボリュームが追加されると永続ボリュームテーブルを更新します。クラスタで自動バックアップが設定されている場合、新しい永続ボリュームでは自動的にバックアップが有効になります。
 
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。

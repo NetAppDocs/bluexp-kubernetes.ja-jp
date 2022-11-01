@@ -2,7 +2,7 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-summary: 高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager に追加します。 
+summary: 管理対象のKubernetesクラスタをBlueXPに追加して、高度なデータ管理を実現します。 
 ---
 = Kubernetes クラスタのドキュメント
 :hardbreaks:

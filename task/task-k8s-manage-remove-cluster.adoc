@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: /task/task-k8s-manage-remove-cluster.html 
 keywords: kubernetes, k8s, remove cluster 
-summary: 管理対象 - Kubernetes クラスタをキャンバスに追加したら、 Cloud Manager を使用してワークスペースからクラスタを削除できます。 
+summary: 管理対象のKubernetesクラスタをCanvasに追加すると、BlueXPを使用してワークスペースからクラスタを削除できます。 
 ---
 = Kubernetes クラスタをワークスペースから削除
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 管理対象 - Kubernetes クラスタをキャンバスに追加した
 
 
 [role="lead"]
-カンバスに管理対象のKubernetesクラスタを追加したら、Cloud Managerを使用してワークスペースからクラスタを削除できます。
+管理対象KubernetesクラスタをCanvasに追加すると、BlueXPを使用してワークスペースからクラスタを削除できます。
 
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
