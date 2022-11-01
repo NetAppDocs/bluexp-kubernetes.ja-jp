@@ -14,7 +14,13 @@ summary: BlueXPのKubernetesの新機能をご確認ください。
 
 
 [role="lead"]
-Cloud Manager（旧Cloud Manager）のKubernetesの新機能について説明します。
+BlueXP（旧称Cloud Manager）のKubernetesの新機能について説明します。
+
+
+
+== 2022年10月30日
+
+いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。
 
 
 
