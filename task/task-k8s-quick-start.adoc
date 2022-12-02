@@ -14,13 +14,13 @@ summary: KubernetesクラスタをBlueXPに追加すると、いくつかの簡�
 
 
 [role="lead"]
-KubernetesクラスタをBlueXPに追加すると、いくつかの簡単な手順で高度なデータ管理が可能になります。
+KubernetesクラスタをBlueXPに追加すると、いくつかの手順で高度なデータ管理を行うことができます。
 
 
 
 == クイックスタート
 
-これらの手順を実行すると、すぐに作業を開始できます。
+を使用します link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] Kubernetesクラスタの管理は、いくつかの手順で開始できます。
 
 [role="quick-margin-para"]
 ご使用の環境がクラスタタイプの前提条件を満たしていることを確認してください。
