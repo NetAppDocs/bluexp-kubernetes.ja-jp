@@ -25,9 +25,9 @@ NOTE: このトピックでは、 _Kubernetes cluster_where configuration is the
 
 Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Astra Tridentは、BlueXPから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に、
 Cloud Volumes ONTAP:: クラスタのバックエンドストレージとして Cloud Volumes ONTAP が設定されている必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
-BlueXPコネクタ:: 必要な権限を持つコネクタが Azure で実行されている必要があります。  a Connector,詳細は以下をご覧ください。
-ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。  networking requirements,詳細は以下をご覧ください。
-RBAC 許可:: BlueXPは、Active Directoryを使用するかどうかに関係なく、RBAC対応のクラスタをサポートしています。BlueXP Connectorロールは、各Azureクラスタで許可されている必要があります。  up RBAC authorization,詳細は以下をご覧ください。
+BlueXPコネクタ:: 必要な権限を持つコネクタが Azure で実行されている必要があります。 <<コネクタを準備します,詳細は以下をご覧ください>>。
+ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。 <<ネットワーク要件を確認します,詳細は以下をご覧ください>>。
+RBAC 許可:: BlueXPは、Active Directoryを使用するかどうかに関係なく、RBAC対応のクラスタをサポートしています。BlueXP Connectorロールは、各Azureクラスタで許可されている必要があります。 <<RBAC 許可をセットアップします,詳細は以下をご覧ください>>。
 
 
 
@@ -119,6 +119,7 @@ NOTE: Astra Tridentをインストールすると、BlueXPはAstra Tridentバッ
 --
 
 
+.作業を開始する前に
 RBAC のサブジェクト名 : name:` の構成は、 Kubernetes クラスタのタイプによって若干異なります。
 
 * 管理対象 AKS クラスタ * を導入する場合、コネクターにシステムが割り当てた管理 ID のオブジェクト ID が必要です。この ID は Azure 管理ポータルで入手できます。
@@ -128,6 +129,7 @@ image:screenshot-k8s-aks-obj-id.png["Azure 管理ポータルのシステムに�
 * 自己管理型の Kubernetes クラスタ * を導入する場合は、許可されたユーザのユーザ名が必要です。
 
 
+.手順
 クラスタロールとロールバインドを作成します。
 
 . 許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。

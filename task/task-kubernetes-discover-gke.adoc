@@ -39,6 +39,7 @@ image:screenshot-k8s-gke-discover.png["選択した Kubernetes クラスタを�
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。
 
 image:screenshot-k8s-gke-canvas.png["Kubernetesクラスタを示すBlueXPのCanvasのスクリーンショット。"]
@@ -65,4 +66,5 @@ image:screenshot-k8s-gke-import-1.png["Kubernetes クラスタのインポート
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。

@@ -35,6 +35,7 @@ image:screenshot-k8s-aks-discover.png["選択した Kubernetes クラスタを�
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。
 
 image:screenshot-k8s-aks-canvas.png["Kubernetesクラスタを示すBlueXPのCanvasのスクリーンショット。"]
@@ -65,4 +66,5 @@ image:screenshot-k8s-aks-import-2.png["認証局、クライアントキー、�
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。

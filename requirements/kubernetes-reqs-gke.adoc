@@ -25,9 +25,9 @@ NOTE: このトピックでは、 _Kubernetes cluster_where 構成は、 GKE ク
 
 Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Astra Tridentは、BlueXPから直接インストールまたはアップグレードできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に
 Cloud Volumes ONTAP:: Cloud Volumes ONTAP は、Kubernetesクラスタと同じテナンシーアカウント、ワークスペース、コネクタを使用してBlueXPに配置する必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
-BlueXPコネクタ:: 必要な権限を持つ Connector が Google で実行されている必要があります。  a Connector,詳細は以下をご覧ください。
-ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。  networking requirements,詳細は以下をご覧ください。
-RBAC 許可:: BlueXPは、Active Directoryを使用するかどうかに関係なく、RBAC対応のクラスタをサポートしています。BlueXPコネクタの役割は、各GKEクラスタで許可されている必要があります。  up RBAC authorization,詳細は以下をご覧ください。
+BlueXPコネクタ:: 必要な権限を持つ Connector が Google で実行されている必要があります。 <<コネクタを準備します,詳細は以下をご覧ください>>。
+ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。 <<ネットワーク要件を確認します,詳細は以下をご覧ください>>。
+RBAC 許可:: BlueXPは、Active Directoryを使用するかどうかに関係なく、RBAC対応のクラスタをサポートしています。BlueXPコネクタの役割は、各GKEクラスタで許可されている必要があります。 <<RBAC 許可をセットアップします,詳細は以下をご覧ください>>。
 
 
 
@@ -102,6 +102,7 @@ NOTE: Astra Tridentをインストールすると、BlueXPはAstra Tridentバッ
 --
 
 
+.作業を開始する前に
 を設定します ``subjects: name:`` YAMLファイルで、BlueXPの一意のIDを知っている必要があります。
 
 一意の ID は、次の 2 つの方法のいずれかで確認できます。
@@ -119,6 +120,7 @@ image:screenshot-gke-unique-id.png["Cloud Console のサービスアカウント
 
 
 
+.手順
 クラスタロールとロールバインドを作成します。
 
 . 許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。

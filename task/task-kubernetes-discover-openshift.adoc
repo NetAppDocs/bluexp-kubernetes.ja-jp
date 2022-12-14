@@ -22,6 +22,7 @@ summary: 自己管理OpenShiftクラスタをBlueXPにインポートして、�
 
 Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes クラスタをインポートできます。
 
+.作業を開始する前に
 OpenShiftクラスタを追加する前に、次のものが必要です。
 
 * で作成した「kubeconfig -sa」ファイル link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html#create-a-kubeconfig-file["kubeconfigファイルを作成します"]。
@@ -42,4 +43,5 @@ image:screenshot-oc-certs.png["クラスタ証明書のアップロード画面�
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。

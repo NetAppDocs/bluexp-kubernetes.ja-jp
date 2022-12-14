@@ -24,6 +24,7 @@ NOTE: BlueXPは、Kubernetesクラスタでバックエンドの変更を監視�
 . 概要 * タブで * ボリュームの表示 * をクリックするか、 * 永続ボリューム * タブをクリックします。永続ボリュームが設定されていない場合は、を参照してください link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html["プロビジョニング"^] Astra Trident でのボリュームのプロビジョニングの詳細については、
 
 
+.結果
 設定されている永続ボリュームの表が表示されます。
 
 image:screenshot-k8s-volume-table.png["永続ボリュームの表のスクリーンショット。"]

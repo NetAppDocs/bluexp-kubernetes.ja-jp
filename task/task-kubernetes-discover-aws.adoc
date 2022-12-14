@@ -35,6 +35,7 @@ image:screenshot-discover-kubernetes-aws-2.png["選択した AWS リージョン
 
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。
 
 image:screenshot-kubernetes-canvas.png["Kubernetesクラスタを示すBlueXPのCanvasのスクリーンショット。"]
@@ -56,4 +57,5 @@ image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポート
 . Kubernetes クラスタを選択し、 * Next * をクリックします。
 
 
+.結果
 BlueXPはKubernetesクラスタをCanvasに追加します。

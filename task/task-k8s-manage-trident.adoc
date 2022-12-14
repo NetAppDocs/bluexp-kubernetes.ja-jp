@@ -41,4 +41,5 @@ image:screenshot-k8s-upgrade-trident.png["Astra Trident のアップグレード
 
 
 
+.結果
 最新バージョンの Astra Trident がインストールされている。ストレージクラスを追加できるようになりました。

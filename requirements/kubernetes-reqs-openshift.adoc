@@ -32,7 +32,7 @@ BlueXPコネクタ:: Kubernetesクラスタをインポートおよび管理す�
 
 --
 ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。
-RBAC許可を使用したKubernetes構成ファイル（kubeconfig）:: OpenShiftクラスタをインポートするには、さまざまな機能を有効にするために必要なRBAC許可を含むkubeconfigファイルが必要です。  a kubeconfig file。
+RBAC許可を使用したKubernetes構成ファイル（kubeconfig）:: OpenShiftクラスタをインポートするには、さまざまな機能を有効にするために必要なRBAC許可を含むkubeconfigファイルが必要です。 <<kubeconfigファイルを作成します>>。
 +
 --
 * バックアップとリストア：バックアップとリストアに必要なのは基本的な許可のみです。
@@ -368,4 +368,5 @@ source create-kubeconfig.sh
 
 
 
+.結果
 結果を使用します `kubeconfig-sa` ファイルを使用して、OpenShiftクラスタをBlueXPに追加します。

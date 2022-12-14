@@ -22,6 +22,7 @@ KubernetesクラスタをBlueXPに追加すると、いくつかの手順で高�
 
 を使用します link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] Kubernetesクラスタの管理は、いくつかの手順で開始できます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 前提条件を確認する
 [role="quick-margin-para"]
 ご使用の環境がクラスタタイプの前提条件を満たしていることを確認してください。
 
@@ -34,6 +35,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] KubernetesクラスタをBlueXPに追加します
 [role="quick-margin-para"]
 Kubernetesクラスタを追加し、BlueXPを使用して作業環境に接続できます。
 
@@ -46,12 +48,14 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["4."] 永続ボリュームのプロビジョニングを開始します
 [role="quick-margin-para"]
 Kubernetes の標準のインターフェイスと構成要素を使用して、永続ボリュームを要求および管理できます。BlueXPでは、NFSおよびiSCSIストレージクラスが作成されており、これを使用してPersistent Volumesをプロビジョニングできます。
 
 [role="quick-margin-para"]
 link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-postdeployment.html#step-3-provision-your-first-volume["Trident を使用した最初のボリュームのプロビジョニングの詳細をご確認ください"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] BlueXPを使用してクラスタを管理します
 [role="quick-margin-para"]
 BlueXPにKubernetesクラスタを追加すると、BlueXPリソースページからクラスタを管理できます。
 
