@@ -45,7 +45,7 @@ sidebar:
     - title: Google Cloud にクラスタを追加します
       flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
-    - title: OpenShiftにクラスタを追加します
+    - title: OpenShiftクラスタをインポートします
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: Kubernetes クラスタを管理
     url: "/concept-manage-k8s.html"

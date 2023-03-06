@@ -24,7 +24,7 @@ Kubernetesクラスタを検出またはBlueXPにインポートすると、永�
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Google Cloud Platform * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Google Cloud Platform *>* Kubernetes Cluster *>* Discover *を選択します。
 +
 image:screenshot-discover-kubernetes-gke.png["Google Cloud Platform と Kubernetes Cluster が選択された作業環境の追加ページのスクリーンショット。"]
 
@@ -58,7 +58,7 @@ Kubernetes クラスタをインポートするには、クラスタロール YA
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Google Cloud Platform * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Google Cloud Platform *>* Kubernetes Cluster *>* Discover *を選択します。
 . [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
 . Kubernetes 構成ファイルを YAML 形式でアップロードします。
 +

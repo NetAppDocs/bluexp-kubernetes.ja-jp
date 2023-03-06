@@ -24,7 +24,7 @@ Kubernetesクラスタを検出またはBlueXPにインポートして、永続�
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Microsoft Azure * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Microsoft Azure *>* Kubernetes Cluster *>* Discover *を選択します。
 +
 image:screenshot-discover-kubernetes-aks.png["選択した Microsoft Azure と Kubernetes クラスタを示す Add Working Environment ページのスクリーンショット"]
 
@@ -54,7 +54,7 @@ Kubernetes クラスタをインポートするには、クラスタロール YA
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Microsoft Azure * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Microsoft Azure *>* Kubernetes Cluster *>* Discover *を選択します。
 . [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
 . Kubernetes 構成ファイルを YAML 形式でアップロードします。
 +

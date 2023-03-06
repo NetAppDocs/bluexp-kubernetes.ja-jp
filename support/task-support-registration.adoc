@@ -87,9 +87,22 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 次の点に注意してください。
 
 +
-** お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
-** ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
-** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。このオプションを使用すると、再度ログインするように求められます。
+** ec084bb25ed5b934c09b361069c246b2
+** 27387009488fe78dcc7cb7e3e432792f
++
+d926847e4634e19a1aa7358becc0fa27
+
++
+a04a3a5322782e8c18d0d64be7e1ccbc
+
+** 1afe8a81cfddc9fa9559e272bb6b9496
++
+452cd4df7b0d5eb1156519a2f3b0206b
+
+** fd02e84624a2fdfd58787131aa2820b5
++
+b14d512a3c64fb5df16f6721b0603c63
+
 
 
 

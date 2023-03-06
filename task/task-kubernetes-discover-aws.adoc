@@ -24,12 +24,12 @@ Kubernetesクラスタを検出またはBlueXPにインポートすることで�
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Amazon Web Services * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Amazon Web Services *>* Kubernetes Cluster *>* Discover *を選択します。
 +
 image:screenshot-discover-kubernetes-aws-1.png["選択した AWS リージョンと Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
 
 . [Discover Cluster] を選択し、 [Next] をクリックします。
-. AWS リージョンを選択し、 Kubernetes クラスタを選択して、 * Next * をクリックします。
+. AWSリージョンを選択し、Kubernetesクラスタを選択して*[次へ]*をクリックします。
 +
 image:screenshot-discover-kubernetes-aws-2.png["選択した AWS リージョンと Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
 
@@ -48,7 +48,7 @@ Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes ク
 
 .手順
 . Canvas * で、 * 作業環境の追加 * をクリックします。
-. Amazon Web Services * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. Amazon Web Services *>* Kubernetes Cluster *>* Discover *を選択します。
 . [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
 . Kubernetes 構成ファイルを YAML 形式でアップロードします。
 +
