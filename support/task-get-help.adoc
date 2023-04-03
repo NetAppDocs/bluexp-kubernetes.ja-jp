@@ -67,6 +67,10 @@ NSSアカウントが表示されない場合は、BlueXPのサポートセク�
 
 *** *事象の説明 *：実行したエラーメッセージやトラブルシューティング手順など、問題の詳細な概要 を入力します。
 *** *その他のメールアドレス*：この問題 を他のユーザーに知らせる場合は、追加のメールアドレスを入力します。
+*** *添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。
++
+添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。
+
 
 
 
@@ -93,61 +97,64 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
-== 898e35e1a4bf4b025c3edec879439b08
+== サポートケースの管理（プレビュー）
 
-8b74b053fbeeff5c3b6f4991cb1d028d
+アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
 
-394ef093ad3259b9ff0fe7406f015b83
+ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
 
 次の点に注意してください。
 
-* 5e4e7672ec2ba2b8a763da7f6714e212
+* ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。
 +
-** 01c3ffea552d74a5ae390b10e71a1f26
-** e3b6c09a5686233f72ce1ea60a1eb088
+** 左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。
+** 右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。
 
 
 +
-b19b168cc8a2b8c984465e140256b3a2
+テーブルの結果には、選択したビューに関連するケースが反映されます。
 
-* 56dcadeee6b0e5c47a52673f9b5a0bb3
+* 目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。
 +
-6f936762e1223311f031685422fcd3a4
+詳細については、以下の手順を参照してください。
 
-* b14929795a61440e9b4ec9f8a4885ae3
+* ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。
 
 
 .手順
 . BlueXPで、[ヘルプ]、[サポート]の順にクリックします。
-. 34b1296d31cefa72dae9b3a364b1f444
+. [ケース管理]*をクリックし、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。
 +
-d8ce1865cf1fe3cffd60300b4b86ad63
+ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。
 
-. 2ae5ae78bdb2d222f15fd8e89248709c
+. 必要に応じて、テーブルに表示される情報を変更します。
 +
-** 27635a52fe4c34c39ffc6430f4244ec6
-** 059e856250b59be3069246887b74a23c
+** [Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。
+** 正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。
 +
-7fcba8aeefa9960d3fc3fa08b360ba2e
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。"]
 
-** a1bb576be9e5a356290f231efb51b3f5
+** 列の内容をフィルタリングします。
 +
-37709be3a43df07d5975287545d0ba12
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。"]
 
-** 1614dc8e47c0492434152c990d6c1040
+** をクリックして、テーブルに表示される列を変更します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["テーブルに表示されるプラスアイコン"] 次に、表示する列を選択します。
 +
-5de408d7cbad49634fb25f9047498132
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["表に表示できる列を示すスクリーンショット。"]
 
 
 
-. 98efef1c8a47ed5791b41944e8ff4ec2
+. をクリックして既存のケースを管理します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["テーブルの最後の列に表示される3つの点を持つアイコン"] 使用可能なオプションのいずれかを選択します。
 +
-** 6d9dd74e7709ef802d299966f7898f6b
-** 482429810c2b00a4fa04f9900c560232
-** f791bc685c526af8296381acff10f6a0
+** *ケースの表示*:特定のケースの詳細を表示します。
+** *ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。
++
+添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。
+
+** *ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。
 
 
 +
-e9a5c374fb47ed2ae5cc6108fb36d829
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。"]
 
 

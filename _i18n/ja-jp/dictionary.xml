@@ -182,7 +182,6 @@
   <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">クイックスタート</block>
   <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident のドキュメント</block>
-  <block id="703b6be9eec96bb49a157de2a1ae70ae" category="admonition">Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。</block>
   <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。</block>
   <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">Astra Trident がインストールされていない場合は、 * Trident のインストール * をクリックします。</block>
   <block id="7c729d1891ae54bb841ac8551a0cc665" category="inline-image-macro">Kubernetes のリソースページのスクリーンショットには、 Astra Trident のインストール用ボタンと Astra Trident のインストール用ボタンが表示されていません。</block>
@@ -244,9 +243,6 @@
   <block id="fbb4c4e41bf29d56afd94a8150a4fc4d" category="summary">Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実行されているシステムから、ボリュームのプロビジョニングと管理をシームレスに行います。</block>
   <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link-macro">Trident の詳細をご確認ください</block>
   <block id="4f63c1d4acd536bd5b9a9745d3f20e7b" category="paragraph">Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実行されているシステムから、ボリュームのプロビジョニングと管理をシームレスに行います。 <block ref="dd2206fc656d0a859de4039d89433dfe" category="inline-link-macro-rx"></block>。</block>
-  <block id="3e1566822574596f61c1fe009087856e" category="list-text">ハイブリッドクラウドインフラの一部としてクラスタを追加、管理</block>
-  <block id="aa6e96555ed26ef1dcb622e5b13653ae" category="list-text">ストレージクラスを追加して管理し、作業環境に接続する。</block>
-  <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">Cloud Backup Service を使用して永続ボリュームをバックアップする。</block>
   <block id="46a72d9af542e3e84ec5f5f3a72f54c1" category="inline-link-macro">Amazon Elastic Kubernetes Service （ Amazon EKS ）</block>
   <block id="f3bd1985b243e9691bbbd63c6702344b" category="inline-link-macro">Microsoft Azure Kubernetes Service （ AKS ）</block>
   <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine （ GKE ）</block>
@@ -353,8 +349,6 @@
   <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
   <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
   <block id="b6f2a65b5d8cda52b65468f1121cccbe" category="inline-link-macro">Trident演算子を使用する</block>
-  <block id="7bf320596331b39277fe4c33b233a4de" category="list-text">互換性のあるバージョンのAstra Tridentがインストールされていることを確認するか、最新バージョンのAstra Tridentにアップグレードしてください。を参照してください <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
-  <block id="3a6729951b75ba10964e07a3b4768c91" category="list-text">Astra Tridentのインストールまたはアップグレード</block>
   <block id="510a1dab177e7ff08d50b9ab0588f804" category="inline-link-macro">Tridentオペレータを使用して導入されています</block>
   <block id="8f13bd8ba84d92d65e6ae6ebc5f6263e" category="paragraph">Astra Tridentの4つの最新バージョンのうちの1つ <block ref="8da7bbab7c5d8930c9f1dd2985917853" category="inline-link-macro-rx"></block> は必須です。</block>
   <block id="301f4e6b65ae846f84074dd048ca5b79" category="inline-link-macro">Astra Tridentの前提条件を確認</block>
@@ -363,7 +357,6 @@
   <block id="d6bbc73a6086ac314349118e0d0d4de3" category="paragraph">管理対象のKubernetesクラスタをCanvasに追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。</block>
   <block id="9db5c72d5e9592f882f48324ae18d47c" category="paragraph">Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。</block>
   <block id="62286cd48d8328138c2c4d1b71e6fe45" category="doc">Astra Tridentのインストールまたはアップグレード</block>
-  <block id="fa68a0b3b7640ba4bb770d375598b4b6" category="list-text">Tridentオペレータを使用して導入された、最新の4つのバージョンのAstra Tridentのうちの1つ（手動またはHelmチャートを使用）が必要です。</block>
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">サポートされていないバージョンのAstra Tridentがインストールされている場合は、* Tridentのアップグレード*をクリックします。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">キャンバスから、Kubernetes作業環境をCloud Volumes ONTAP またはAmazon FSX for ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。</block>
   <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
@@ -541,8 +534,6 @@
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。[ケースの作成]フォームの上部にあるNSSアカウントの一覧を確認して、適切な一致を見つけることができます。または、次のいずれかのオプションを使用してサポートを依頼することもできます。</block>
   <block id="b9df8925a665185ffc090378d80c3ca0" category="summary">Managed KubernetesクラスタをCanvasに追加したら、BlueXPを使用して、対応するAstra TridentのインストールまたはAstra Tridentのインストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。</block>
-  <block id="f8172d064c9fb599a086fdf468a86d9c" category="paragraph">管理対象のKubernetesクラスタをCanvasに追加すると、BlueXPを使用して、互換性のあるAstra Tridentのインストールを確認したり、Astra Tridentを最新バージョンにインストールまたはアップグレードしたりできます。</block>
-  <block id="158d545fe2a8c88daca03335fce4aab2" category="list-text">を使用してTridentを導入<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> はサポートされていません。を使用してAstra Tridentを導入した場合<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>では、BlueXPを使用してKubernetesクラスタを管理することはできません。実行する必要があります <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> 再インストールしてください <block ref="47df2f698ba12609a6e06bab6dbff5ef" category="inline-link-macro-rx"></block> または、以下の手順を使用してください。</block>
   <block id="2a7197d6e9567831e87e6509f3201004" category="summary">Kubernetesクラスタを検出またはBlueXPにインポートすると、永続ボリュームをGoogle Cloudにバックアップできます。</block>
   <block id="0ea87609b14e53ad467ce5d72a9245c5" category="doc">Google Cloud KubernetesクラスタをBlueXPに追加します</block>
   <block id="02ba2e13b041c6824ecb6e0878729f6b" category="paragraph">BlueXPはKubernetesクラスタをCanvasに追加します。</block>
@@ -565,7 +556,6 @@
   <block id="bbbfe19ca23f7ee5a4e823af05cbd046" category="doc">Azure KubernetesクラスタをBlueXPに追加します</block>
   <block id="05ecd2f4a0ed37993412cf4d3e123e85" category="paragraph">Kubernetesクラスタを検出またはBlueXPにインポートして、永続ボリュームをAzureにバックアップできるようにすることができます。</block>
   <block id="b99333497d2d3db69922107844cb9474" category="paragraph"><block ref="b99333497d2d3db69922107844cb9474" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac6d0965f33632c33b532767c5f5cf1a" category="summary">KubernetesクラスタをBlueXPに追加すると、いくつかの簡単な手順で高度なデータ管理が可能になります。</block>
   <block id="5ba4facc62a7fe1280b842092b4e64e3" category="paragraph">Kubernetesクラスタを追加し、BlueXPを使用して作業環境に接続できます。</block>
   <block id="6fc0464220dc386a37007468b2c94086" category="paragraph">Kubernetes の標準のインターフェイスと構成要素を使用して、永続ボリュームを要求および管理できます。BlueXPでは、NFSおよびiSCSIストレージクラスが作成されており、これを使用してPersistent Volumesをプロビジョニングできます。</block>
   <block id="22a7b4f5dd259ae78aeff6a22466a375" category="paragraph">BlueXPにKubernetesクラスタを追加すると、BlueXPリソースページからクラスタを管理できます。</block>
@@ -586,13 +576,11 @@
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">いつ <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>では、ブロックストレージやファイルシステムストレージに対して、ストレージクラスの経済性を実現できます。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
-  <block id="7caa90f14b457665f7fa695360ecb815" category="paragraph">Tridentオペレータを使用して導入された、互換性のあるバージョンのAstra Tridentを使用すると、を使用してKubernetesクラスタを直接管理できます <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （旧称Cloud Manager）。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
-  <block id="485af08837450e02af336c55571fef57" category="paragraph">KubernetesクラスタをBlueXPに追加すると、いくつかの手順で高度なデータ管理を行うことができます。</block>
   <block id="c0a71f242f9a20837eeb221262b5ec52" category="paragraph">を使用します <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> Kubernetesクラスタの管理は、いくつかの手順で開始できます。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
@@ -629,4 +617,84 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">[*Resources*]ページで、[Technical Support]で次のいずれかのオプションを選択します。</block>
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">[ケースの作成]*をクリックして、ネットアップサポートスペシャリストとのチケットをオープンします。</block>
   <block id="14d43bcefa1304e65774a093c0b798c2" category="sidebar">OpenShiftクラスタをインポートします</block>
+  <block id="2d5671c9f87d5881eec80e4e140c0364" category="list-text">互換性のあるバージョンのAstra Tridentがインストールされていることを確認するか、最新バージョンのAstra Tridentにアップグレードするか、Astra Tridentをアンインストールします。を参照してください <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
+  <block id="18f4dd4dcad9491106ca9ad766f15972" category="summary">BlueXPを使用すると、わずかな手順でKubernetesクラスタの管理を開始できます。</block>
+  <block id="c949166d6970748c0094c800daa3324a" category="doc">Trident で Astra を管理</block>
+  <block id="5362d84aa85052dc57ee427cc92ef344" category="paragraph">管理対象のKubernetesクラスタをCanvasに追加したら、BlueXPを使用して、互換性のあるAstra Tridentのインストールの確認、Astra Tridentのインストールまたは最新バージョンへのアップグレード、Astra Tridentのアンインストールを行うことができます。</block>
+  <block id="161d9090769f19a69eef7ef0c229d93d" category="section-title">BlueXPのAstra Trident</block>
+  <block id="62c30bcfbdb4b7c0181a789ede3e749a" category="paragraph">BlueXPにKubernetesクラスタを追加すると、Astra TridentとKubernetesクラスタを概要ページで管理できるようになります。概要ページを開くには、CanvasでKubernetes作業環境をダブルクリックします。</block>
+  <block id="ec6fcae1ba8df077c437ef2026436316" category="section-title">サポートされるAstra Tridentバージョン</block>
+  <block id="ea355478bf6a72e41e6454dd0be48ae2" category="paragraph">Tridentオペレータを使用して導入された、最新の4つのバージョンのAstra Tridentのうちの1つ（手動またはHelmチャートを使用）が必要です。Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。</block>
+  <block id="54569e194bab3dae1d44eaaa9ad1ab0b" category="inline-link-macro">Tridentオペレータ</block>
+  <block id="8153aaea8ca787dd0f6e13cd06ba39b8" category="admonition">を使用してTridentを導入<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block> はサポートされていません。を使用してAstra Tridentを導入した場合<block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category="inline-code"></block>の場合、BlueXPを使用してKubernetesクラスタを管理したり、Astra Tridentをアンインストールしたりすることはできません。実行する必要があります <block ref="beced4150254b668093e945aacf7262c" category="inline-link-macro-rx"></block> を使用して手動でAstra Tridentを再インストールします <block ref="63fe8d185cbbf6a0ce17ed72ff923974" category="inline-link-macro-rx"></block> またはを使用してBlueXPで使用できます <block ref="f1de51606b29dff0c9b1a92d4a5068f2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="85476e9aef7545cef68e349b3a81422c" category="paragraph">Astra Tridentのインストールステータスとバージョンは概要ページで確認できます。Astra Tridentがまだインストールされていない場合や互換性のないバージョンがインストールされている場合は、BlueXPを使用して管理できます。</block>
+  <block id="5ff3faebb0ff710340bdbee89a4667ad" category="inline-link-macro">オペレータにアップグレードしてください</block>
+  <block id="244f5a9f7cb41a54f23539754a6e17b2" category="admonition">BlueXPを使用して、21.01より前のバージョンのAstra Tridentからアップグレードすることはできません。以前のバージョンからアップグレードするには、を参照してください <block ref="c2b60006c9fadcf65befa6bac681ff72" category="inline-link-macro-rx"></block>。</block>
+  <block id="43f17763173fe230bdd78477152f5f7d" category="section-title">Astra Trident をアンインストール</block>
+  <block id="83b445d8ff0d72c31d8404121a5105f4" category="paragraph">BlueXPまたはTridentオペレータ（Helmまたは手動）を使用してAstra Tridentをインストールした場合は、BlueXPを使用してアンインストールできます。</block>
+  <block id="7d4b056f6045b6850c0716327db288b6" category="list-text">Astra Tridentをアンインストールしたあとに新しい永続ボリュームを作成することはできませんが、既存のボリュームは引き続き使用できます。</block>
+  <block id="324bdc145af29bc671d0caf2a7b498f6" category="list-text">Astra Tridentのアンインストール中はバックアップを使用できません。</block>
+  <block id="311bac3bde31940eb5734ccc0f196472" category="list-text">Astra Tridentを作業環境にいつでも再インストールして、クラスタの管理を継続できます。</block>
+  <block id="58696af88eb7bc52de53be6f3297f99c" category="inline-link-macro">Tridentオペレータを使用してをアンインストールします</block>
+  <block id="3c8ca53356eeccb12428a250663aa881" category="paragraph">BlueXPを使用してAstra Tridentをアンインストールしても、インストール時に適用されたAstra Tridentサービスがすべて削除されるわけではありません。Astra Tridentで作成されるすべてのカスタムリソース定義（CRD）を含め、Astra Tridentを完全に削除する方法については、を参照してください <block ref="3d29040915e5b5cb57038cab0797dd4f" category="inline-link-macro-rx"></block></block>
+  <block id="77addfb223c3ed99a41d37952c95a6fb" category="list-text">概要ページで、省略記号と* Uninstall Astra Trident *を選択します。</block>
+  <block id="81241d9f0e44951e32c292b050624aba" category="inline-image-macro">Astra Tridentをアンインストールするメニューのスクリーンショット。</block>
+  <block id="46844a78cea0511267653b2ff244faab" category="paragraph"><block ref="46844a78cea0511267653b2ff244faab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e36a0095f836afc001b2d9c1edee5e6f" category="list-text">[Uninstall]*を選択して、Astra Tridentを確認してアンインストールします。</block>
+  <block id="35019b4b6292627398d74835213fc1d9" category="paragraph">作業環境からAstra Tridentがアンインストールされました。Astra Tridentはいつでも再インストールできます。</block>
+  <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
+  <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Astra Tridentをアンインストールします</block>
+  <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">次の操作を実行できます。 <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> これは、TridentオペレータまたはBlueXPを使用してインストールしました。</block>
+  <block id="b39075adcfffd4fd3160f2f3f63a59c5" category="paragraph">を使用します <block ref="541c088337155bc1f5030ebf639984c7" category="inline-link-macro-rx"></block> （旧称Cloud Manager）と、Tridentオペレータを使用して導入されたAstra Tridentの互換バージョンでは、次のことが可能です。</block>
+  <block id="c8e0b61e09c13c9a6302fff8b355d22c" category="list-text">Kubernetesクラスタを追加および管理します</block>
+  <block id="a328809c4e80884ded58a673a70bcad8" category="inline-link-macro">Astra Tridentをインストール、アップグレード、アンインストール</block>
+  <block id="f21b0b2390c3041251b997210a7cf24f" category="list-text"><block ref="f21b0b2390c3041251b997210a7cf24f" category="inline-link-macro-rx"></block></block>
+  <block id="8d9aa96de7c286ee7d10cfa821025a6f" category="inline-link-macro">ストレージクラスを追加および削除します</block>
+  <block id="ce62c2574c8872c1fed16a5a0a8d2840" category="list-text"><block ref="ce62c2574c8872c1fed16a5a0a8d2840" category="inline-link-macro-rx"></block></block>
+  <block id="5d330c78fdbd034ad3466dadfcb8a623" category="list-text"><block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block></block>
+  <block id="9c153b8dfcd24e0e7636fce1b4bc0046" category="inline-link-macro">Kubernetesクラスタを削除</block>
+  <block id="1055dc3b82f79fd0cc2d70e2b80ad343" category="list-text"><block ref="95401bdeb9da6ac759821eb6cb403909" category="inline-link-macro-rx"></block> をクリックします</block>
+  <block id="579ae5f19c02240c7a837f86f15400b5" category="inline-link-macro">Cloud Backupをアクティブ化または表示</block>
+  <block id="9f4013cde5baeea58bab7f26d0642b38" category="list-text"><block ref="9f4013cde5baeea58bab7f26d0642b38" category="inline-link-macro-rx"></block></block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースの管理（プレビュー）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">テーブルの結果には、選択したビューに関連するケースが反映されます。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順を参照してください。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">[ケース管理]*をクリックし、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">[Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">テーブルに表示されるプラスアイコン</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">をクリックして、テーブルに表示される列を変更します <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 次に、表示する列を選択します。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">表に表示できる列を示すスクリーンショット。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">テーブルの最後の列に表示される3つの点を持つアイコン</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">をクリックして既存のケースを管理します <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 使用可能なオプションのいずれかを選択します。</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSSアカウントは、お客様レベルのアカウントである必要があります（ゲストアカウントや一時アカウントではありません）。複数のお客様レベルのNSSアカウントを設定できます。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSSアカウントがパートナーレベルのアカウントの場合、作成できるNSSアカウントは1つだけです。お客様レベルのNSSアカウントを追加しようとすると、パートナーレベルのアカウントが存在する場合は、次のエラーメッセージが表示されます。</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「別のタイプのNSSユーザーがすでに存在するため、このアカウントではNSS顧客タイプは許可されていません。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存のお客様レベルのNSSアカウントがあり、パートナーレベルのアカウントを追加しようとする場合も同様です。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
 </blocks>

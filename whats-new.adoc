@@ -18,6 +18,14 @@ BlueXP（旧称Cloud Manager）のKubernetesの新機能について説明しま
 
 
 
+== 2023年4月2日
+
+* 次の操作を実行できます。 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをアンインストールします"] これは、TridentオペレータまたはBlueXPを使用してインストールしました。
+* ユーザインターフェイスが改善され、ドキュメントのスクリーンショットが更新されました。
+
+
+
+
 == 2023年3月5日
 
 * BlueXPのKubernetesでAstra Trident 23.01がサポートされるようになりました。

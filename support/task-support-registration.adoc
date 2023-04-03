@@ -87,21 +87,21 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 次の点に注意してください。
 
 +
-** ec084bb25ed5b934c09b361069c246b2
-** 27387009488fe78dcc7cb7e3e432792f
+** NSSアカウントは、お客様レベルのアカウントである必要があります（ゲストアカウントや一時アカウントではありません）。複数のお客様レベルのNSSアカウントを設定できます。
+** NSSアカウントがパートナーレベルのアカウントの場合、作成できるNSSアカウントは1つだけです。お客様レベルのNSSアカウントを追加しようとすると、パートナーレベルのアカウントが存在する場合は、次のエラーメッセージが表示されます。
 +
-d926847e4634e19a1aa7358becc0fa27
+「別のタイプのNSSユーザーがすでに存在するため、このアカウントではNSS顧客タイプは許可されていません。」
 
 +
-a04a3a5322782e8c18d0d64be7e1ccbc
+既存のお客様レベルのNSSアカウントがあり、パートナーレベルのアカウントを追加しようとする場合も同様です。
 
-** 1afe8a81cfddc9fa9559e272bb6b9496
+** ログインに成功すると、ネットアップはNSSのユーザ名を保存します。
 +
-452cd4df7b0d5eb1156519a2f3b0206b
+これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
 
-** fd02e84624a2fdfd58787131aa2820b5
+** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
 +
-b14d512a3c64fb5df16f6721b0603c63
+このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。
 
 
 
