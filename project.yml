@@ -8,6 +8,19 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
+  filter:
+    label: クラウドプロバイダ
+    default: すべてのクラウドプロバイダ
+    options:
+    - name: Amazon Web Services の
+      alias: AWS
+      id: aws
+    - name: Google Cloud
+      alias: Google Cloud
+      id: gcp
+    - name: Microsoft Azure
+      alias: Azure
+      id: azure
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
