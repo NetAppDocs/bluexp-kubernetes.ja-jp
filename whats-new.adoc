@@ -58,15 +58,25 @@ ifdef::aws[]
 
 
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]endif：：aws[]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
 
-+ifdef：：azure[]
+endif::aws[]
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]endif：：azure[]
+[+]
 
-+ifdef ::gcp[]
+ifdef::azure[]
 
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]endif：GCP []
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
+
+endif::azure[]
+
+[+]
+
+ifdef::gcp[]
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
+
+endif::gcp[]
 
 * いつ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを定義する"]をクリックし、ブロックストレージのファイルシステムタイプ（fstype）を指定できるようになりました。
 
