@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-gke.html 
+permalink: requirements/kubernetes-reqs-gke.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, google, google cloud, gke, kubernetes support 
 summary: '管理対象のGoogle Kubernetes Engine Cluster（GKE）および自動管理型Kubernetesクラスタは、BlueXPを使用してGoogleで追加および管理できます。BlueXPにクラスタを追加する前に"次の要件が満たされていることを確認します' 
 ---

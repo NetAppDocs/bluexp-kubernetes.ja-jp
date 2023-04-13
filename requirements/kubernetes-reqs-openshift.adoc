@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-openshift.html 
+permalink: requirements/kubernetes-reqs-openshift.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, openshift, oc, kubernetes support 
 summary: 'BlueXPを使用して、自己管理型OpenShift Kubernetesクラスタを追加および管理できます。BlueXPにクラスタを追加する前に"次の要件が満たされていることを確認します' 
 ---

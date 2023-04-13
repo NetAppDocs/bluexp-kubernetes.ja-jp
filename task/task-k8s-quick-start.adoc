@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /task/task-k8s-quick-start.html 
+permalink: task/task-k8s-quick-start.html 
 keywords: kubernetes, persistent volumes, containers, persistent storage, kubeconfig, trident, kubernetes cluster, storage classes, classes, cvo-single, cvo-ha, thick provisioning, trident_trident, connect, disconnect, provision 
 summary: BlueXPを使用すると、わずかな手順でKubernetesクラスタの管理を開始できます。 
 ---

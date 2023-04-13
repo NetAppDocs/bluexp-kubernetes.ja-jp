@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: /requirements/kubernetes-reqs-aks.html 
+permalink: requirements/kubernetes-reqs-aks.html 
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, azure, aks, kubernetes support 
 summary: 'Azureでは、BlueXPを使用して、マネージドAzure Kubernetesクラスタ（AKS）と自己管理Kubernetesクラスタを追加および管理できます。BlueXPにクラスタを追加する前に"次の要件が満たされていることを確認します' 
 ---
