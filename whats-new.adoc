@@ -45,7 +45,7 @@ BlueXP（旧称Cloud Manager）のKubernetesの新機能について説明しま
 自己管理OpenShiftクラスタをCloud Managerにインポートできるようになりました。
 
 * link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShiftでのKubernetesクラスタの要件"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["Cloud ManagerにOpenShiftクラスタを追加します"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-openshift.html["OpenShiftクラスタをCloud Managerにインポートします"]
 
 
 
