@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager, bluexp' 
 summary: BlueXPのKubernetesの新機能をご確認ください。 
 ---
 = BlueXPのKubernetesの新機能
@@ -14,7 +14,7 @@ summary: BlueXPのKubernetesの新機能をご確認ください。
 
 
 [role="lead"]
-BlueXP（旧称Cloud Manager）のKubernetesの新機能について説明します。
+BlueXP（Cloud Manager）のKubernetesの新機能をご紹介します。
 
 
 
