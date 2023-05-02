@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-manage-k8s.html 
-keywords: overview, manage, k8s, kubernetes 
+keywords: overview, manage, k8s, kubernetes, tridentctl, trident operator, operator 
 summary: BlueXPを使用して、Astra Tridentのインストール、ストレージクラスの構成、クラスタの削除、データサービスの有効化を行うことができます。 
 ---
 = Kubernetes クラスタを管理
@@ -13,10 +13,8 @@ summary: BlueXPを使用して、Astra Tridentのインストール、ストレ�
 :imagesdir: ./media/
 
 
-[].lead] BlueXPを使用して、Astra Tridentのインストールとアップグレード、ストレージクラスの設定、クラスタの削除、データサービスの有効化を実行できます。
-
-
-NOTE: を使用してTridentを導入 `tridentctl` はサポートされていません。を使用してAstra Tridentを導入した場合 `tridentctl`では、BlueXPを使用してKubernetesクラスタを管理することはできません。実行する必要があります  再インストールしてください link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident演算子を使用する"^] または link:./task/task-k8s-manage-trident.html["BlueXPを使用している"]。
+[role="lead"]
+BlueXPを使用して、Astra Tridentのインストールまたはアップグレード、ストレージクラスの構成、クラスタの削除、データサービスの有効化を行うことができます。
 
 
 
@@ -35,3 +33,9 @@ image:screenshot-k8s-resource-page.png["クラスタの詳細を示す Kubernete
 * Kubernetes クラスタをワークスペースから削除を参照してください link:./task/task-k8s-manage-remove-cluster.html["クラスタを削除"]。
 * BlueXPのバックアップとリカバリのアクティブ化と表示を参照してください link:./task/task-kubernetes-enable-services.html["ネットアップのクラウドデータサービスを活用"]。
 
+
+
+
+== 既知の制限事項
+
+を使用してTridentを導入 `tridentctl` はサポートされていません。を使用してAstra Tridentを導入した場合 `tridentctl`では、BlueXPを使用してKubernetesクラスタを管理することはできません。実行する必要があります  再インストールしてください link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident演算子を使用する"^] または link:./task/task-k8s-manage-trident.html["BlueXPを使用している"]。
