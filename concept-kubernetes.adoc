@@ -20,7 +20,15 @@ Astra Trident は、ネットアップが管理している、完全にサポー
 
 == の機能
 
-を使用します link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] （Cloud Manager）と、Tridentオペレータを使用して導入される互換性のあるバージョンのAstra Tridentでは、次のことが可能です。* Kubernetesクラスタの追加と管理* link:./task/task-k8s-manage-trident.html["Astra Tridentをインストール、アップグレード、アンインストール"]* link:./task/task-k8s-manage-storage-classes.html["ストレージクラスを追加および削除します"]* link:./task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]* link:./task/task-k8s-manage-remove-cluster.html["Kubernetesクラスタを削除"] ワークスペースから* link:./task/task-kubernetes-enable-services.html["BlueXPのバックアップとリカバリのアクティブ化と表示"]
+を使用します link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] （Cloud Manager）と互換性のあるバージョンのAstra TridentをTridentオペレータを使用して導入すると、次のことが可能になります。
+
+* Kubernetesクラスタを追加および管理します
+* link:./task/task-k8s-manage-trident.html["Astra Tridentをインストール、アップグレード、アンインストール"]
+* link:./task/task-k8s-manage-storage-classes.html["ストレージクラスを追加および削除します"]
+* link:./task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]
+* link:./task/task-k8s-manage-remove-cluster.html["Kubernetesクラスタを削除"] をクリックします
+* link:./task/task-kubernetes-enable-services.html["BlueXPのバックアップとリカバリのアクティブ化と表示"]
+
 
 
 

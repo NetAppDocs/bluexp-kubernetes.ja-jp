@@ -266,15 +266,6 @@ roleRef:
     apiGroup: rbac.authorization.k8s.io
 ----
 --
-.Trident をインストール
---
-コマンドラインを使用して完全な認証を行い、BlueXPでAstra Tridentをインストールできるようにします。
-
-[source, cli]
-----
-eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "system:masters" --username system:node:{{EC2PrivateDNSName}}
-----
---
 ====
 .. クラスタに構成を適用します。
 +

@@ -33,7 +33,6 @@ indexpage:
       flavor: azure
     - title: Google Cloud にクラスタを追加します
       url: "/task/task-kubernetes-discover-gke.html"
-      flavor: gcp
     - title: OpenShiftクラスタをインポートします
       url: "/task/task-kubernetes-discover-openshift.html"
   - title: Kubernetes クラスタを管理
