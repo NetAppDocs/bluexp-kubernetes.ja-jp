@@ -250,14 +250,11 @@
   <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">バックアップとリストア</block>
   <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">バックアップとリストアに必要なのは、基本的な許可だけです。</block>
   <block id="e38848cde65bc177038607eba51773c3" category="list-text">Astra Trident をインストールします</block>
-  <block id="a392c9c3d2df2d0a5afaed519cd01879" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。</block>
   <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">バックアップ / リストア</block>
   <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">ストレージクラス</block>
-  <block id="05a0030833e70e4af624c3716f988104" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。</block>
   <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">異なる機能を有効にするには、異なる許可が必要です。</block>
-  <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。</block>
   <block id="384b71db954a7a463c759208283e47c4" category="doc">Kubernetes クラスタを管理</block>
   <block id="a55c9ab275da7d6af3d043922cbe9db6" category="inline-image-macro">クラスタの詳細を示す Kubernetes リソースページのスクリーンショット。</block>
   <block id="6e7cef0ef9634162a88caaa29c694893" category="paragraph"><block ref="6e7cef0ef9634162a88caaa29c694893" category="inline-image-macro-rx" type="image"></block></block>
@@ -695,4 +692,10 @@
   <block id="de6156e46a0797be4d22df59cc5bf2d9" category="list-text"><block ref="de6156e46a0797be4d22df59cc5bf2d9" category="inline-link-macro-rx"></block></block>
   <block id="85f3c28401138a5e7e67a35f6a6235fb" category="paragraph">BlueXPを使用して、Astra Tridentのインストールまたはアップグレード、ストレージクラスの構成、クラスタの削除、データサービスの有効化を行うことができます。</block>
   <block id="51ce397d2f1bccd912fdb6f415de2940" category="section-title">既知の制限事項</block>
+  <block id="363b65cde3a58a4944b673e9d7fce91c" category="list-text">要件に基づいて承認をカスタマイズできます。</block>
+  <block id="134cda91d8ceed300f8bbdb1a6b354ed" category="paragraph">を交換します <block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix="" category="inline-code"></block> 変数にユーザ名とを入力します <block ref="ee324b4038870a1a0a7d516e6c4c421d" prefix="" category="inline-code"></block> システムが割り当てた管理IDのオブジェクトID、または上記のように許可されたユーザーのユーザー名のいずれかを使用します。</block>
+  <block id="a108a9c48040b2343bc708a6b5ed0d22" category="open-title">Tridentのインストール</block>
+  <block id="52964b35567ba6adef127cdd68d2fa70" category="paragraph">コマンドラインを使用して完全な認証を行い、BlueXPでAstra Tridentをインストールできるようにします。</block>
+  <block id="1fe5f07cd7f6b046882a66a9f9c308d2" category="paragraph">フル管理者権限を付与し、BlueXPでAstra Tridentをインストールできるようにします。</block>
+  <block id="7c0ad7b6a922ca797e316eb1ed6cdbeb" category="paragraph">を交換します <block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix="" category="inline-code"></block> 変数にユーザ名とを入力します <block ref="ee324b4038870a1a0a7d516e6c4c421d" prefix="" category="inline-code"></block> 承認されたサービスアカウントの一意のIDを使用します。</block>
 </blocks>

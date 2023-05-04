@@ -132,13 +132,15 @@ image:screenshot-k8s-aks-obj-id.png["Azure 管理ポータルのシステムに�
 .手順
 クラスタロールとロールバインドを作成します。
 
-. 許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。
+. 要件に基づいて承認をカスタマイズできます。
 +
 [role="tabbed-block"]
 ====
 .バックアップ / リストア
 --
 Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。
+
+を交換します ``subjects: kind:`` 変数にユーザ名とを入力します ``subjects: user:`` システムが割り当てた管理IDのオブジェクトID、または上記のように許可されたユーザーのユーザー名のいずれかを使用します。
 
 [source, yaml]
 ----
@@ -217,6 +219,8 @@ roleRef:
 --
 BlueXPを使用してストレージクラスを追加するには'拡張された認証を追加します
 
+を交換します ``subjects: kind:`` 変数にユーザ名とを入力します ``subjects: user:`` システムが割り当てた管理IDのオブジェクトID、または上記のように許可されたユーザーのユーザー名のいずれかを使用します。
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -277,6 +281,15 @@ roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
+----
+--
+.Tridentのインストール
+--
+コマンドラインを使用して完全な認証を行い、BlueXPでAstra Tridentをインストールできるようにします。
+
+[source, cli]
+----
+eksctl create iamidentitymapping --cluster < > --region < > --arn < > --group "system:masters" --username system:node:{{EC2PrivateDNSName}}
 ----
 --
 ====

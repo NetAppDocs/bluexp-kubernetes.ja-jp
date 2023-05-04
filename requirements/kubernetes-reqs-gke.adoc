@@ -123,13 +123,15 @@ image:screenshot-gke-unique-id.png["Cloud Console のサービスアカウント
 .手順
 クラスタロールとロールバインドを作成します。
 
-. 許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。
+. 要件に基づいて承認をカスタマイズできます。
 +
 [role="tabbed-block"]
 ====
 .バックアップ / リストア
 --
 Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。
+
+を交換します ``subjects: kind:`` 変数にユーザ名とを入力します ``subjects: user:`` 承認されたサービスアカウントの一意のIDを使用します。
 
 [source, yaml]
 ----
@@ -208,6 +210,8 @@ roleRef:
 --
 BlueXPを使用してストレージクラスを追加するには'拡張された認証を追加します
 
+を交換します ``subjects: kind:`` 変数にユーザ名とを入力します ``subjects: user:`` 承認されたサービスアカウントの一意のIDを使用します。
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -268,6 +272,15 @@ roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
+----
+--
+.Tridentのインストール
+--
+コマンドラインを使用して完全な認証を行い、BlueXPでAstra Tridentをインストールできるようにします。
+
+[source, cli]
+----
+kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Unique ID>
 ----
 --
 ====
