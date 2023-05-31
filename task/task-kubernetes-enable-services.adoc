@@ -18,6 +18,6 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 BlueXPのバックアップとリカバリを使用して、永続ボリュームをオブジェクトストレージにバックアップできます。
 
-link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["BlueXPのバックアップとリカバリを使用してKubernetesクラスタのデータを保護する方法をご紹介します"^]。
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-kubernetes-backup-to-cloud.html["BlueXPのバックアップとリカバリを使用してKubernetesクラスタのデータを保護する方法をご紹介します"^]。
 
 image:screenshot-k8s-backup.png["BlueXPのバックアップとリカバリのKubernetesページのスクリーンショット。Kubernetesクラスタの5つのバックアップジョブが表示されています。"]

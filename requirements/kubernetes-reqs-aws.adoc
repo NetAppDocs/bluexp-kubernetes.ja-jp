@@ -42,9 +42,9 @@ Kubernetesクラスタを検出および管理するには、AWSにBlueXPコネ�
 
 次のリンクのいずれかの手順に従います。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["BlueXPからコネクタを作成します"^] （推奨）
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["AWS Marketplace からコネクタを作成します"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["AWS の既存の Linux ホストにコネクタをインストールします"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["BlueXPからコネクタを作成します"^] （推奨）
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-aws-mktp.html["AWS Marketplace からコネクタを作成します"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html["AWS の既存の Linux ホストにコネクタをインストールします"^]
 
 
 
@@ -72,7 +72,7 @@ image:screenshot-aws-edit-policy.png["AWS コンソールのスクリーンシ�
 
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["ポリシーの完全な JSON 形式を表示します"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["ポリシーの完全な JSON 形式を表示します"^]
 
 . [ ポリシーの確認 ] をクリックし、 [ 変更の保存 ] をクリックします。
 

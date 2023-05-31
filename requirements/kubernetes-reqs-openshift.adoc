@@ -25,9 +25,9 @@ Cloud Volumes ONTAP:: クラスタのバックエンドストレージとして 
 BlueXPコネクタ:: Kubernetesクラスタをインポートおよび管理するには、BlueXPコネクタが必要です。クラウドプロバイダに必要な権限を持つ新しいコネクタを作成するか、既存のコネクタを使用する必要があります。
 +
 --
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWSコネクタ"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure Connectorの場合"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connectorの場合"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aws.html#prepare-a-connector["AWSコネクタ"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-aks.html#prepare-a-connector["Azure Connectorの場合"]
+* link:https://docs.netapp.com/us-en/bluexp-kubernetes/requirements/kubernetes-reqs-gke.html#prepare-a-connector["Google Cloud Connectorの場合"]
 
 
 --

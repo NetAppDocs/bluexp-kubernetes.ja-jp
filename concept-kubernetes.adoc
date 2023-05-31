@@ -20,7 +20,7 @@ Astra Trident は、ネットアップが管理している、完全にサポー
 
 == の機能
 
-を使用します link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html["BlueXP"^] （Cloud Manager）と互換性のあるバージョンのAstra TridentをTridentオペレータを使用して導入すると、次のことが可能になります。
+を使用します link:https://docs.netapp.com/us-en/bluexp-setup-admin/index.html["BlueXP"^] Tridentオペレータを使用して互換性のあるバージョンのAstra Tridentを導入すると、次のことが可能になります。
 
 * Kubernetesクラスタを追加および管理します
 * link:./task/task-k8s-manage-trident.html["Astra Tridentをインストール、アップグレード、アンインストール"]
