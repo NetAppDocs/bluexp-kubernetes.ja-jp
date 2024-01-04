@@ -131,7 +131,7 @@ image:screenshot-gke-unique-id.png["Cloud Console のサービスアカウント
 --
 Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。
 
-を交換します ``subjects: kind:`` 変数にユーザ名とを入力します ``subjects: user:`` 承認されたサービスアカウントの一意のIDを使用します。
+を交換します `subjects: kind:` 変数にユーザ名とを入力します `subjects: name:` 承認されたサービスアカウントの一意のIDを使用します。
 
 [source, yaml]
 ----
