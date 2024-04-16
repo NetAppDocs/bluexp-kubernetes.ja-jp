@@ -275,14 +275,12 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
   <block id="6401d12bcac1f01899ab494a0a6d8edb" category="section-title">ドラッグアンドドロップしてストレージクラスを追加します</block>
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">KubernetesクラスタをドラッグしてCloud Volumes ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
@@ -406,7 +404,6 @@
   <block id="f1353ecc73ca9ea978933e3884b9ce99" category="paragraph">KubernetesクラスタをBlueXPに追加すると、リソースページからクラスタを管理できるようになります。リソースページを開くには、キャンバス上の Kubernetes 作業環境をダブルクリックします。</block>
   <block id="8f696d5a5f9b66b14465e6edd8c0ec21" category="doc">BlueXPでのKubernetesのデータ管理</block>
   <block id="8b4d25df20eadf8dd52c5fe961669cb3" category="paragraph">BlueXPは、次の環境で実行されるマネージドKubernetesクラスタをサポートしています。</block>
-  <block id="76bef843768c13f5b026423fd5e3f21d" category="paragraph">最新バージョンのAstra Tridentは、BlueXPから直接インストールまたはアップグレードできます。</block>
   <block id="3d2d606b1ba09a7c7d879ebe24c66f00" category="paragraph">BlueXPでは'_discover _で使用しているKubernetesクラスタには料金は発生しませんがCloud Backup Service を使用して永続ボリュームをバックアップする場合には課金されます</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
@@ -441,7 +438,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">お客様のご意見をお考えください。フィードバックを送信して、BlueXPの改善に役立ててください。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
   <block id="b9df8925a665185ffc090378d80c3ca0" category="summary">Managed KubernetesクラスタをCanvasに追加したら、BlueXPを使用して、対応するAstra TridentのインストールまたはAstra Tridentのインストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。</block>
@@ -704,4 +700,6 @@
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。</block>
   <block id="531ad5e6be7e9668f912aa6e655e5902" category="paragraph">を交換します<block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix=" " category="inline-code"></block> 変数にユーザ名とを入力します<block ref="28fbe2acd4be605635c165dd4f851ab7" prefix=" " category="inline-code"></block> 承認されたサービスアカウントの一意のIDを使用します。</block>
   <block id="f7686ca7ddbb48ed256c1ad60bb0a874" category="paragraph">を交換します<block ref="860b2d1ba3877711b8cf22d81c10ee15" prefix=" " category="inline-code"></block> 変数にユーザ名とを入力します<block ref="28fbe2acd4be605635c165dd4f851ab7" prefix=" " category="inline-code"></block> システムが割り当てた管理IDのオブジェクトID、または上記のように許可されたユーザーのユーザー名のいずれかを使用します。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
+  <block id="7da82155c5e551fd1f5208b71004d2ff" category="paragraph">Astra Tridentは、BlueXPから直接インストールすることも、サポート対象バージョンにアップグレードすることもできます。</block>
 </blocks>
